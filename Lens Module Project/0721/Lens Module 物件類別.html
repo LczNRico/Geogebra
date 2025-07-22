@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<title>GeoGebra - Construction Protocol</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></head>
+<body>
+<h1>Lens Module</h1>
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Definition</th>
+<th>Value</th>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000">Point A</span></td>
+<td>&nbsp;</td>
+<td><span style="color:#CC0000">A = (2.24, 1.64, 0.0800)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0076DC">Point B</span></td>
+<td>&nbsp;</td>
+<td><span style="color:#0076DC">B = (3.18, 3.69, 0.0755)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number Ä</td>
+<td>&nbsp;</td>
+<td>Ä = 1.80</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number Á</td>
+<td>&nbsp;</td>
+<td>Á = 1.00</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#D32F2F">Sphere a</span></td>
+<td><span style="color:#D32F2F">Sphere(A, &#961;)</span></td>
+<td><span style="color:#D32F2F">a: (x - 2.24)² + (y - 1.64)² + (z - 0.0800)² = 1.00</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#C75000">Sphere b</span></td>
+<td><span style="color:#C75000">Sphere(B, &#964;)</span></td>
+<td><span style="color:#C75000">b: (x - 3.18)² + (y - 3.69)² + (z - 0.0755)² = 3.24</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#167CAF">Circle LensMidplane</span></td>
+<td><span style="color:#167CAF">IntersectConic(b, a)</span></td>
+<td><span style="color:#167CAF">LensMidplane: X = (2.51, 2.21, 0.0787) + (0.703 cos(t) + 0.000629 sin(t), -0.319 cos(t) + 0.00138 sin(t), 0.00 cos(t) + 0.772 sin(t))</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#975FA8">Surface Curve§</span></td>
+<td><span style="color:#975FA8">Surface(LensMidplane, 2.00&#960;, xAxis)</span></td>
+<td><span style="color:#975FA8">Curve§(u,v) = (cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51, (cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21) cos(v) + (cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787) (-sin(v)), (cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21) sin(v) + (cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787) cos(v))</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181">Plane LensExtension</span></td>
+<td><span style="color:#098181">Plane(LensMidplane)</span></td>
+<td><span style="color:#098181">LensExtension: -0.414x - 0.910y + 0.00197z = -3.05</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0000FF">Surface Curve¥</span></td>
+<td><span style="color:#0000FF">Surface(LensMidplane, 2.00&#960;, yAxis)</span></td>
+<td><span style="color:#0000FF">Curve¥(u,v) = ((cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51) cos(v) + (cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787) sin(v), cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21, (cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51) (-sin(v)) + (cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787) cos(v))</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6">Point C</span></td>
+<td><span style="color:#6464E6">PointIn(LensMidplane)</span></td>
+<td><span style="color:#6464E6">C = (2.65, 2.15, 0.0964)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment Connect<sub><font size="-1">AC</font></sub></html></td>
+<td>Segment(A, C)</td>
+<td>Connect<sub><font size="-1">AC</font></sub> = 0.656</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane ABC<sub><font size="-1">1</font></sub></html></span></td>
+<td><span style="color:#098181">Plane(A, B, C)</span></td>
+<td><span style="color:#098181">ABC<sub><font size="-1">1</font></sub>: 0.0361x - 0.0172y - 0.363z = 0.0239</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#C600EA">Surface Curve–</span></td>
+<td><span style="color:#C600EA">Surface(LensMidplane, 2.00&#960;, zAxis)</span></td>
+<td><span style="color:#C600EA">Curve–(u,v) = ((cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51) cos(v) + (cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21) (-sin(v)), (cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51) sin(v) + (cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21) cos(v), cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Circle Circle<sub><font size="-1">&#913;&#961;1</font></sub></html></td>
+<td>Circle(A, &#961;, ABC<sub><font size="-1">1</font></sub>)</td>
+<td>Circle<sub><font size="-1">&#913;&#961;1</font></sub>: X = (2.24, 1.64, 0.0800) + (0.430 cos(t) + 0.897 sin(t), 0.903 cos(t) - 0.427 sin(t), 0.00 cos(t) + 0.110 sin(t))</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Circle Circle<sub><font size="-1">B&#964;1</font></sub></html></td>
+<td>Circle(B, &#964;, ABC<sub><font size="-1">1</font></sub>)</td>
+<td>Circle<sub><font size="-1">B&#964;1</font></sub>: X = (3.18, 3.69, 0.0755) + (0.774 cos(t) + 1.62 sin(t), 1.63 cos(t) - 0.769 sin(t), 0.00 cos(t) + 0.197 sin(t))</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">1&#8594;2</font></sub>(1.81, 2.53, -0.00579)</html></span></td>
+<td><span style="color:#444444">Intersect(Circle<sub><font size="-1">&#913;&#961;1</font></sub>, Circle<sub><font size="-1">B&#964;1</font></sub>, 2.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">1&#8594;2</font></sub> = (1.81, 2.53, -0.00579)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">1&#8594;1</font></sub>(3.21, 1.90, 0.163)</html></span></td>
+<td><span style="color:#444444">Intersect(Circle<sub><font size="-1">&#913;&#961;1</font></sub>, Circle<sub><font size="-1">B&#964;1</font></sub>, 1.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">1&#8594;1</font></sub> = (3.21, 1.90, 0.163)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment MirrowCross<sub><font size="-1">1</font></sub></html></td>
+<td>Segment(Vertex<sub><font size="-1">1&#8594;2</font></sub>, Vertex<sub><font size="-1">1&#8594;1</font></sub>)</td>
+<td>MirrowCross<sub><font size="-1">1</font></sub> = 1.54</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane ABC<sub><font size="-1">2</font></sub></html></span></td>
+<td><span style="color:#098181">PerpendicularPlane(A, MirrowCross<sub><font size="-1">1</font></sub>)</span></td>
+<td><span style="color:#098181">ABC<sub><font size="-1">2</font></sub>: 1.40x - 0.635y + 0.169z = 2.11</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008754"><html>Arc Arc<sub><font size="-1">A&#961;1</font></sub></html></span></td>
+<td><span style="color:#008754">CircularArc(A, Vertex<sub><font size="-1">1&#8594;1</font></sub>, Vertex<sub><font size="-1">1&#8594;2</font></sub>)</span></td>
+<td><span style="color:#008754">Arc<sub><font size="-1">A&#961;1</font></sub> = 1.76</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008754"><html>Arc Arc<sub><font size="-1">&#914;&#964;1</font></sub></html></span></td>
+<td><span style="color:#008754">CircularArc(B, Vertex<sub><font size="-1">1&#8594;1</font></sub>, Vertex<sub><font size="-1">1&#8594;2</font></sub>)</span></td>
+<td><span style="color:#008754">Arc<sub><font size="-1">&#914;&#964;1</font></sub> = 1.60</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Segment SCDis</td>
+<td>Segment(A, B)</td>
+<td>SCDis = 2.26</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Circle Circle<sub><font size="-1">&#913;&#961;2</font></sub></html></td>
+<td>Circle(A, &#961;, ABC<sub><font size="-1">2</font></sub>)</td>
+<td>Circle<sub><font size="-1">&#913;&#961;2</font></sub>: X = (2.24, 1.64, 0.0800) + (0.414 cos(t) - 0.0997 sin(t), 0.910 cos(t) + 0.0453 sin(t), 0.00 cos(t) + 0.994 sin(t))</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Circle Circle<sub><font size="-1">B&#964;2</font></sub></html></td>
+<td>Circle(B, &#964;, ABC<sub><font size="-1">2</font></sub>)</td>
+<td>Circle<sub><font size="-1">B&#964;2</font></sub>: X = (3.18, 3.69, 0.0755) + (0.745 cos(t) - 0.179 sin(t), 1.64 cos(t) + 0.0815 sin(t), 0.00 cos(t) + 1.79 sin(t))</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">2&#8594;2</font></sub>(2.58, 2.18, -0.689)</html></span></td>
+<td><span style="color:#444444">Intersect(Circle<sub><font size="-1">&#913;&#961;2</font></sub>, Circle<sub><font size="-1">B&#964;2</font></sub>, 2.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">2&#8594;2</font></sub> = (2.58, 2.18, -0.689)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">2&#8594;1</font></sub>(2.43, 2.25, 0.846)</html></span></td>
+<td><span style="color:#444444">Intersect(Circle<sub><font size="-1">&#913;&#961;2</font></sub>, Circle<sub><font size="-1">B&#964;2</font></sub>, 1.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">2&#8594;1</font></sub> = (2.43, 2.25, 0.846)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point LensSurfaceM<sub><font size="-1">A</font></sub>(2.44, 2.06, 0.0791)</html></span></td>
+<td><span style="color:#444444">Intersect(SCDis, Circle<sub><font size="-1">B&#964;2</font></sub>, 2.00)</span></td>
+<td><span style="color:#444444">LensSurfaceM<sub><font size="-1">A</font></sub> = (2.44, 2.06, 0.0791)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point LensSurfaceM<sub><font size="-1">B</font></sub>(2.66, 2.55, 0.0780)</html></span></td>
+<td><span style="color:#444444">Intersect(SCDis, Circle<sub><font size="-1">&#913;&#961;2</font></sub>, 1.00)</span></td>
+<td><span style="color:#444444">LensSurfaceM<sub><font size="-1">B</font></sub> = (2.66, 2.55, 0.0780)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008700"><html>Arc Arc<sub><font size="-1">A&#961;2</font></sub></html></span></td>
+<td><span style="color:#008700">CircularArc(A, Vertex<sub><font size="-1">2&#8594;1</font></sub>, Vertex<sub><font size="-1">2&#8594;2</font></sub>)</span></td>
+<td><span style="color:#008700">Arc<sub><font size="-1">A&#961;2</font></sub> = 1.76</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008700"><html>Arc Arc<sub><font size="-1">B&#964;2</font></sub></html></span></td>
+<td><span style="color:#008700">CircularArc(B, Vertex<sub><font size="-1">2&#8594;1</font></sub>, Vertex<sub><font size="-1">2&#8594;2</font></sub>)</span></td>
+<td><span style="color:#008700">Arc<sub><font size="-1">B&#964;2</font></sub> = 1.60</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400">List T</span></td>
+<td><span style="color:#006400">{Arc<sub><font size="-1">A&#961;2</font></sub>, Arc<sub><font size="-1">B&#964;2</font></sub>, Arc<sub><font size="-1">A&#961;1</font></sub>, Arc<sub><font size="-1">&#914;&#964;1</font></sub>}</span></td>
+<td><span style="color:#006400">T = {1.76, 1.60, 1.76, 1.60}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000"><html>Point IncidentPointA<sub><font size="-1">1st</font></sub>(1.86, 2.48, 0.00160)</html></span></td>
+<td><span style="color:#CC0000">Point(Arc<sub><font size="-1">&#914;&#964;1</font></sub>)</span></td>
+<td><span style="color:#CC0000">IncidentPointA<sub><font size="-1">1st</font></sub> = (1.86, 2.48, 0.00160)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment Connect<sub><font size="-1">BC</font></sub></html></td>
+<td>Segment(B, C)</td>
+<td>Connect<sub><font size="-1">BC</font></sub> = 1.63</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0076DC"><html>Point IncidentPointB<sub><font size="-1">1st</font></sub>(3.20, 1.91, 0.163)</html></span></td>
+<td><span style="color:#0076DC">Point(Arc<sub><font size="-1">A&#961;1</font></sub>)</span></td>
+<td><span style="color:#0076DC">IncidentPointB<sub><font size="-1">1st</font></sub> = (3.20, 1.91, 0.163)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008754">Point LightSource</span></td>
+<td>&nbsp;</td>
+<td><span style="color:#008754">LightSource = (3.72, 1.94, 0.162)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment C<sub><font size="-1">&#8594;</font></sub>IncidentPointB</html></td>
+<td>Segment(IncidentPointB<sub><font size="-1">1st</font></sub>, C)</td>
+<td>C<sub><font size="-1">&#8594;</font></sub>IncidentPointB = 0.605</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment MirrowCross<sub><font size="-1">2</font></sub></html></td>
+<td>Segment(Vertex<sub><font size="-1">2&#8594;1</font></sub>, Vertex<sub><font size="-1">2&#8594;2</font></sub>)</td>
+<td>MirrowCross<sub><font size="-1">2</font></sub> = 1.54</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444">Point LensCenter</span></td>
+<td><span style="color:#444444">Intersect(MirrowCross<sub><font size="-1">2</font></sub>, MirrowCross<sub><font size="-1">1</font></sub>)</span></td>
+<td><span style="color:#444444">LensCenter = (2.51, 2.21, 0.0787)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Line Spindle</td>
+<td>PerpendicularLine(LensCenter, LensExtension)</td>
+<td>Spindle: X = (2.51, 2.21, 0.0787) + » (-0.414, -0.910, 0.00197)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#D81B60">Surface d</span></td>
+<td><span style="color:#D81B60">Surface(LensMidplane, 2.00&#960;, MirrowCross<sub><font size="-1">1</font></sub>)</span></td>
+<td><span style="color:#D81B60">d(u,v) = ((cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51 - 1.81) (cos(v) * 0.181 + 0.819) + (cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21 - 2.53) ((1.00 - cos(v)) (-0.372) - sin(v) * 0.110) + (cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787 + 0.00579) ((1.00 - cos(v)) * 0.0991 + sin(v) (-0.411)) + 1.81, (cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51 - 1.81) ((1.00 - cos(v)) (-0.372) + sin(v) * 0.110) + (cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21 - 2.53) (cos(v) * 0.831 + 0.169) + (cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787 + 0.00579) ((1.00 - cos(v)) (-0.0450) - sin(v) * 0.905) + 2.53, (cos(u) * 0.772 * 0.910 + sin(u) * 0.772 * 0.000814 + 2.51 - 1.81) ((1.00 - cos(v)) * 0.0991 - sin(v) (-0.411)) + (cos(u) * 0.772(-0.414) + sin(u) * 0.772 * 0.00179 + 2.21 - 2.53) ((1.00 - cos(v)) (-0.0450) + sin(v) * 0.905) + (cos(u) * 0.772 * 0.00 + sin(u) * 0.772 * 1.00 + 0.0787 + 0.00579) (cos(v) * 0.988 + 0.0120) - 0.00579)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment C<sub><font size="-1">&#8594;</font></sub>IncidentPointA</html></td>
+<td>Segment(IncidentPointA<sub><font size="-1">1st</font></sub>, C)</td>
+<td>C<sub><font size="-1">&#8594;</font></sub>IncidentPointA = 0.867</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number n<sub><font size="-1">Outside</font></sub></html></td>
+<td>&nbsp;</td>
+<td>n<sub><font size="-1">Outside</font></sub> = 1.00</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number n<sub><font size="-1">Lens</font></sub></html></td>
+<td>&nbsp;</td>
+<td>n<sub><font size="-1">Lens</font></sub> = 1.30</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number n<sub><font size="-1">Vacuum</font></sub></html></td>
+<td>&nbsp;</td>
+<td>n<sub><font size="-1">Vacuum</font></sub> = 1.00</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Segment É</td>
+<td>Segment(LensSurfaceM<sub><font size="-1">A</font></sub>, LensSurfaceM<sub><font size="-1">B</font></sub>)</td>
+<td>É = 0.538</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment CurvatureRadius<sub><font size="-1">A</font></sub></html></td>
+<td>Segment(A, LensSurfaceM<sub><font size="-1">B</font></sub>)</td>
+<td>CurvatureRadius<sub><font size="-1">A</font></sub> = 1.00</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment CurvatureRadius<sub><font size="-1">B</font></sub></html></td>
+<td>Segment(B, LensSurfaceM<sub><font size="-1">A</font></sub>)</td>
+<td>CurvatureRadius<sub><font size="-1">B</font></sub> = 1.80</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#955;<sub><font size="-1">A</font></sub></html></td>
+<td>abs((n<sub><font size="-1">Lens</font></sub> &#x2F; n<sub><font size="-1">Outside</font></sub> - 1.00) (1.00 &#x2F; &#964; - 1.00 &#x2F; &#961; + (n<sub><font size="-1">Lens</font></sub> - 1.00) &#969; &#x2F; (n<sub><font size="-1">Lens</font></sub> &#961; &#964;)))</td>
+<td>&#955;<sub><font size="-1">A</font></sub> = 0.113</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#955;<sub><font size="-1">B</font></sub></html></td>
+<td>abs((n<sub><font size="-1">Lens</font></sub> &#x2F; n<sub><font size="-1">Outside</font></sub> - 1.00) (1.00 &#x2F; &#961; - 1.00 &#x2F; &#964; + (n<sub><font size="-1">Lens</font></sub> - 1.00) &#969; &#x2F; (n<sub><font size="-1">Lens</font></sub> &#961; &#964;)))</td>
+<td>&#955;<sub><font size="-1">B</font></sub> = 0.154</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Vector FocusDirection<sub><font size="-1">A</font></sub></html></td>
+<td>Vector(LensCenter, A)</td>
+<td>FocusDirection<sub><font size="-1">A</font></sub> = (-0.263, -0.579, 0.00125)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>List T<sub><font size="-1">1</font></sub></html></span></td>
+<td><span style="color:#006400">{Arc<sub><font size="-1">A&#961;1</font></sub>, Arc<sub><font size="-1">&#914;&#964;1</font></sub>}</span></td>
+<td><span style="color:#006400">T<sub><font size="-1">1</font></sub> = {1.76, 1.60}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>List T<sub><font size="-1">2</font></sub></html></span></td>
+<td><span style="color:#006400">{Arc<sub><font size="-1">A&#961;2</font></sub>, Arc<sub><font size="-1">B&#964;2</font></sub>}</span></td>
+<td><span style="color:#006400">T<sub><font size="-1">2</font></sub> = {1.76, 1.60}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Lenght<sub><font size="-1">A</font></sub>(-0.414, -0.910, 0.00197)</html></span></td>
+<td><span style="color:#444444">FocusDirection<sub><font size="-1">A</font></sub> &#x2F; abs(FocusDirection<sub><font size="-1">A</font></sub>)</span></td>
+<td><span style="color:#444444">Lenght<sub><font size="-1">A</font></sub> = (-0.414, -0.910, 0.00197)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment FocalLenght<sub><font size="-1">A</font></sub></html></td>
+<td>Segment(LensCenter, LensCenter + &#955;<sub><font size="-1">A</font></sub> Lenght<sub><font size="-1">A</font></sub>)</td>
+<td>FocalLenght<sub><font size="-1">A</font></sub> = 0.113</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Vector FocusDirection<sub><font size="-1">B</font></sub></html></td>
+<td>Vector(LensCenter, B)</td>
+<td>FocusDirection<sub><font size="-1">B</font></sub> = (0.673, 1.48, -0.00320)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Lenght<sub><font size="-1">B</font></sub>(0.414, 0.910, -0.00197)</html></span></td>
+<td><span style="color:#444444">FocusDirection<sub><font size="-1">B</font></sub> &#x2F; abs(FocusDirection<sub><font size="-1">B</font></sub>)</span></td>
+<td><span style="color:#444444">Lenght<sub><font size="-1">B</font></sub> = (0.414, 0.910, -0.00197)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment FocalLenght<sub><font size="-1">B</font></sub></html></td>
+<td>Segment(LensCenter, LensCenter + &#955;<sub><font size="-1">B</font></sub> Lenght<sub><font size="-1">B</font></sub>)</td>
+<td>FocalLenght<sub><font size="-1">B</font></sub> = 0.154</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#A943DC"><html>Point Focus<sub><font size="-1">B</font></sub>(2.57, 2.35, 0.0784)</html></span></td>
+<td><span style="color:#A943DC">Point(FocalLenght<sub><font size="-1">B</font></sub>)</span></td>
+<td><span style="color:#A943DC">Focus<sub><font size="-1">B</font></sub> = (2.57, 2.35, 0.0784)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#A943DC"><html>Point Focus<sub><font size="-1">A</font></sub>(2.46, 2.11, 0.0790)</html></span></td>
+<td><span style="color:#A943DC">Point(FocalLenght<sub><font size="-1">A</font></sub>)</span></td>
+<td><span style="color:#A943DC">Focus<sub><font size="-1">A</font></sub> = (2.46, 2.11, 0.0790)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane FocalPlane<sub><font size="-1">A</font></sub></html></span></td>
+<td><span style="color:#098181">PerpendicularPlane(Focus<sub><font size="-1">A</font></sub>, Spindle)</span></td>
+<td><span style="color:#098181">FocalPlane<sub><font size="-1">A</font></sub>: -0.414x - 0.910y + 0.00197z = -2.94</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane FocalPlane<sub><font size="-1">B</font></sub></html></span></td>
+<td><span style="color:#098181">PerpendicularPlane(Focus<sub><font size="-1">B</font></sub>, Spindle)</span></td>
+<td><span style="color:#098181">FocalPlane<sub><font size="-1">B</font></sub>: -0.414x - 0.910y + 0.00197z = -3.21</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Line Tangent<sub><font size="-1">ArcA&#961;1,IncidentB</font></sub></html></td>
+<td>Tangent(IncidentPointB<sub><font size="-1">1st</font></sub>, Arc<sub><font size="-1">A&#961;1</font></sub>)</td>
+<td>Tangent<sub><font size="-1">ArcA&#961;1,IncidentB</font></sub>: X = (3.21, 1.90, 0.163) + &#955; (-0.264, 0.962, -0.0718)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Line i</td>
+<td>PerpendicularLine(IncidentPointB<sub><font size="-1">1st</font></sub>, Arc<sub><font size="-1">A&#961;1</font></sub>)</td>
+<td>i: X = (3.20, 1.91, 0.163) + » (-0.0970, 0.0462, 0.976)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Line NormalLineB<sub><font size="-1">1st,InRe</font></sub></html></td>
+<td>PerpendicularLine(Tangent<sub><font size="-1">ArcA&#961;1,IncidentB</font></sub>, i)</td>
+<td>NormalLineB<sub><font size="-1">1st,InRe</font></sub>: X = (3.20, 1.91, 0.163) + &#955; (0.942, 0.264, 0.0812)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">B,1st</font></sub>(3.63, 2.03, 0.200)</html></span></td>
+<td><span style="color:#6464E6">Point(NormalLineB<sub><font size="-1">1st,InRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">B,1st</font></sub> = (3.63, 2.03, 0.200)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0076DC"><html>Angle &#946;<sub><font size="-1">1st,Incident</font></sub></html></span></td>
+<td><span style="color:#0076DC">Angle(LightSource, IncidentPointB<sub><font size="-1">1st</font></sub>, &#913;uxiliary<sub><font size="-1">B,1st</font></sub>)</span></td>
+<td><span style="color:#0076DC">&#946;<sub><font size="-1">1st,Incident</font></sub> = 0.226 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Line Tangent<sub><font size="-1">ArcB&#964;1,IncidentA</font></sub></html></td>
+<td>Tangent(IncidentPointA<sub><font size="-1">1st</font></sub>, Arc<sub><font size="-1">&#914;&#964;1</font></sub>)</td>
+<td>Tangent<sub><font size="-1">ArcB&#964;1,IncidentA</font></sub>: X = (3.22, 0.984, 0.208) + &#955; (-1.21, 1.32, -0.183)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Line h</td>
+<td>PerpendicularLine(IncidentPointA<sub><font size="-1">1st</font></sub>, Arc<sub><font size="-1">&#914;&#964;1</font></sub>)</td>
+<td>h: X = (1.86, 2.48, 0.00160) + » (0.248, -0.118, -2.50)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Line NormalLineA<sub><font size="-1">1st,InRe</font></sub></html></td>
+<td>PerpendicularLine(Tangent<sub><font size="-1">ArcB&#964;1,IncidentA</font></sub>, h)</td>
+<td>NormalLineA<sub><font size="-1">1st,InRe</font></sub>: X = (1.86, 2.48, 0.00160) + &#955; (-3.32, -3.06, -0.186)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">A,1st</font></sub>(1.45, 2.10, -0.0212)</html></span></td>
+<td><span style="color:#6464E6">Point(NormalLineA<sub><font size="-1">1st,InRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">A,1st</font></sub> = (1.45, 2.10, -0.0212)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#EB0000"><html>Angle &#945;<sub><font size="-1">1st,Incident</font></sub></html></span></td>
+<td><span style="color:#EB0000">Angle(LightSource, IncidentPointA<sub><font size="-1">1st</font></sub>, &#913;uxiliary<sub><font size="-1">A,1st</font></sub>)</span></td>
+<td><span style="color:#EB0000">&#945;<sub><font size="-1">1st,Incident</font></sub> = 2.12 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#C75000"><html>Ray LightIncident<sub><font size="-1">A,B,1st</font></sub></html></span></td>
+<td><span style="color:#C75000">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &#8804; &#960; &#x2F; 2.00, Ray(LightSource, IncidentPointA<sub><font size="-1">1st</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Ray(LightSource, IncidentPointB<sub><font size="-1">1st</font></sub>))</span></td>
+<td><span style="color:#C75000">LightIncident<sub><font size="-1">A,B,1st</font></sub>: X = (3.72, 1.94, 0.162) + &#955; (-0.517, -0.0330, 0.000973)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008282"><html>Plane IntersectionZone<sub><font size="-1">A,B,1stInRe</font></sub></html></span></td>
+<td><span style="color:#008282">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Plane(LightSource, IncidentPointA<sub><font size="-1">1st</font></sub>, &#913;uxiliary<sub><font size="-1">A,1st</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Plane(LightSource, IncidentPointB<sub><font size="-1">1st</font></sub>, &#913;uxiliary<sub><font size="-1">B,1st</font></sub>))</span></td>
+<td><span style="color:#008282">IntersectionZone<sub><font size="-1">A,B,1stInRe</font></sub>: -0.00134x + 0.0195y - 0.0481z = 0.0251</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#945;<sub><font size="-1">1</font></sub></html></td>
+<td>n<sub><font size="-1">Outside</font></sub> &#x2F; n<sub><font size="-1">Lens</font></sub> sin(&#945;<sub><font size="-1">1st,Incident</font></sub>)</td>
+<td>&#945;<sub><font size="-1">1</font></sub> = 0.657</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">A,1st,Symmetry</font></sub>(2.27, 2.85, 0.0244)</html></span></td>
+<td><span style="color:#6464E6">Reflect(&#913;uxiliary<sub><font size="-1">A,1st</font></sub>, IncidentPointA<sub><font size="-1">1st</font></sub>)</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">A,1st,Symmetry</font></sub> = (2.27, 2.85, 0.0244)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point Rotate<sub><font size="-1">A,1st,Refrection</font></sub>(2.40, 2.52, -0.114)</html></span></td>
+<td><span style="color:#6464E6">Rotate(&#913;uxiliary<sub><font size="-1">A,1st,Symmetry</font></sub>, sin&#8315;&#185;(&#945;<sub><font size="-1">1</font></sub>), IncidentPointA<sub><font size="-1">1st</font></sub>, IntersectionZone<sub><font size="-1">A,B,1stInRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">Rotate<sub><font size="-1">A,1st,Refrection</font></sub> = (2.40, 2.52, -0.114)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#EB0000"><html>Angle &#945;<sub><font size="-1">1st,Refraction</font></sub></html></span></td>
+<td><span style="color:#EB0000">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Angle(&#913;uxiliary<sub><font size="-1">A,1st,Symmetry</font></sub>, IncidentPointA<sub><font size="-1">1st</font></sub>, Rotate<sub><font size="-1">A,1st,Refrection</font></sub>, IntersectionZone<sub><font size="-1">A,B,1stInRe</font></sub>))</span></td>
+<td><span style="color:#EB0000">&#945;<sub><font size="-1">1st,Refraction</font></sub> = ?</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#945;<sub><font size="-1">1</font></sub>'</html></td>
+<td>sin(&#945;<sub><font size="-1">1st,Refraction</font></sub>)</td>
+<td>&#945;<sub><font size="-1">1</font></sub>' = ?</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">B,1st,Symmetry</font></sub>(2.77, 1.78, 0.126)</html></span></td>
+<td><span style="color:#6464E6">Reflect(&#913;uxiliary<sub><font size="-1">B,1st</font></sub>, IncidentPointB<sub><font size="-1">1st</font></sub>)</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">B,1st,Symmetry</font></sub> = (2.77, 1.78, 0.126)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#946;<sub><font size="-1">1</font></sub></html></td>
+<td>n<sub><font size="-1">Outside</font></sub> &#x2F; n<sub><font size="-1">Lens</font></sub> sin(&#946;<sub><font size="-1">1st,Incident</font></sub>)</td>
+<td>&#946;<sub><font size="-1">1</font></sub> = 0.172</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point Rotate<sub><font size="-1">B,1st,Refrection</font></sub>(2.76, 1.85, 0.155)</html></span></td>
+<td><span style="color:#6464E6">Rotate(&#913;uxiliary<sub><font size="-1">B,1st,Symmetry</font></sub>, sin&#8315;&#185;(&#946;<sub><font size="-1">1</font></sub>), IncidentPointB<sub><font size="-1">1st</font></sub>, IntersectionZone<sub><font size="-1">A,B,1stInRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">Rotate<sub><font size="-1">B,1st,Refrection</font></sub> = (2.76, 1.85, 0.155)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#993300"><html>Ray LightRefraction<sub><font size="-1">A,B,1st</font></sub></html></span></td>
+<td><span style="color:#993300">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Ray(IncidentPointA<sub><font size="-1">1st</font></sub>, Rotate<sub><font size="-1">A,1st,Refrection</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Ray(IncidentPointB<sub><font size="-1">1st</font></sub>, Rotate<sub><font size="-1">B,1st,Refrection</font></sub>))</span></td>
+<td><span style="color:#993300">LightRefraction<sub><font size="-1">A,B,1st</font></sub>: X = (3.20, 1.91, 0.163) + &#955; (-0.444, -0.0503, -0.00806)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#EB0000"><html>Plane IntersectionFindingZone<sub><font size="-1">A,B,2ndInRe</font></sub></html></span></td>
+<td><span style="color:#EB0000">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Plane(A, LightRefraction<sub><font size="-1">A,B,1st</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Plane(B, LightRefraction<sub><font size="-1">A,B,1st</font></sub>))</span></td>
+<td><span style="color:#EB0000">IntersectionFindingZone<sub><font size="-1">A,B,2ndInRe</font></sub>: 0.0188x - 0.0385y - 0.797z = -0.143</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Circle Circle<sub><font size="-1">A,B,2ndInRe</font></sub></html></td>
+<td>If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Circle(A, &#961;, IntersectionFindingZone<sub><font size="-1">A,B,2ndInRe</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Circle(B, &#964;, IntersectionFindingZone<sub><font size="-1">A,B,2ndInRe</font></sub>))</td>
+<td>Circle<sub><font size="-1">A,B,2ndInRe</font></sub>: X = (3.18, 3.69, 0.0755) + (1.62 cos(t) + 0.788 sin(t), 0.789 cos(t) - 1.62 sin(t), 0.00 cos(t) + 0.0968 sin(t))</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">A,B&#8594;1</font></sub>(3.21, 1.90, 0.163)</html></span></td>
+<td><span style="color:#444444">Intersect(LensMidplane, Circle<sub><font size="-1">A,B,2ndInRe</font></sub>, 1.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">A,B&#8594;1</font></sub> = (3.21, 1.90, 0.163)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">A,B&#8594;2</font></sub>(1.80, 2.53, 0.0992)</html></span></td>
+<td><span style="color:#444444">Intersect(LensMidplane, Circle<sub><font size="-1">A,B,2ndInRe</font></sub>, 2.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">A,B&#8594;2</font></sub> = (1.80, 2.53, 0.0992)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#4D8000"><html>Arc ArcAB<sub><font size="-1">2nd,Incident</font></sub></html></span></td>
+<td><span style="color:#4D8000">CircularArc(A, Vertex<sub><font size="-1">A,B&#8594;1</font></sub>, Vertex<sub><font size="-1">A,B&#8594;2</font></sub>)</span></td>
+<td><span style="color:#4D8000">ArcAB<sub><font size="-1">2nd,Incident</font></sub> = 1.76</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#4D8000"><html>Arc Arc<sub><font size="-1">A,B,2ndInRe</font></sub></html></span></td>
+<td><span style="color:#4D8000">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, CircularArc(A, Vertex<sub><font size="-1">A,B&#8594;1</font></sub>, Vertex<sub><font size="-1">A,B&#8594;2</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, CircularArc(B, Vertex<sub><font size="-1">A,B&#8594;1</font></sub>, Vertex<sub><font size="-1">A,B&#8594;2</font></sub>))</span></td>
+<td><span style="color:#4D8000">Arc<sub><font size="-1">A,B,2ndInRe</font></sub> = 1.59</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000"><html>Point IncidentPointA<sub><font size="-1">2nd</font></sub>(?, ?, ?)</html></span></td>
+<td><span style="color:#CC0000">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Intersect(LightRefraction<sub><font size="-1">A,B,1st</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>, 1.00))</span></td>
+<td><span style="color:#CC0000">IncidentPointA<sub><font size="-1">2nd</font></sub> = (?, ?, ?)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#993300"><html>Segment IncidentSegment<sub><font size="-1">A,B,1st</font></sub></html></span></td>
+<td><span style="color:#993300">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Segment(LightSource, IncidentPointA<sub><font size="-1">1st</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Segment(LightSource, IncidentPointB<sub><font size="-1">1st</font></sub>))</span></td>
+<td><span style="color:#993300">IncidentSegment<sub><font size="-1">A,B,1st</font></sub> = 0.518</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0076DC"><html>Angle &#946;<sub><font size="-1">1st,Refraction</font></sub></html></span></td>
+<td><span style="color:#0076DC">If(&#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Angle(&#913;uxiliary<sub><font size="-1">B,1st,Symmetry</font></sub>, IncidentPointB<sub><font size="-1">1st</font></sub>, Rotate<sub><font size="-1">B,1st,Refrection</font></sub>, IntersectionZone<sub><font size="-1">A,B,1stInRe</font></sub>))</span></td>
+<td><span style="color:#0076DC">&#946;<sub><font size="-1">1st,Refraction</font></sub> = 0.173 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#946;<sub><font size="-1">1</font></sub>'</html></td>
+<td>sin(&#946;<sub><font size="-1">1st,Refraction</font></sub>)</td>
+<td>&#946;<sub><font size="-1">1</font></sub>' = 0.172</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0076DC"><html>Point IncidentPointB<sub><font size="-1">2nd</font></sub>(3.14, 1.90, 0.161)</html></span></td>
+<td><span style="color:#0076DC">If(&#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Intersect(LightRefraction<sub><font size="-1">A,B,1st</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>, 1.00))</span></td>
+<td><span style="color:#0076DC">IncidentPointB<sub><font size="-1">2nd</font></sub> = (3.14, 1.90, 0.161)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008282"><html>Segment IncidentSegment<sub><font size="-1">A,B,2nd</font></sub></html></span></td>
+<td><span style="color:#008282">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Segment(IncidentPointA<sub><font size="-1">1st</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Segment(IncidentPointB<sub><font size="-1">1st</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>))</span></td>
+<td><span style="color:#008282">IncidentSegment<sub><font size="-1">A,B,2nd</font></sub> = 0.0687</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Line Tangent<sub><font size="-1">2nd,IncidentA,B</font></sub></html></td>
+<td>If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Tangent(IncidentPointA<sub><font size="-1">2nd</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Tangent(IncidentPointB<sub><font size="-1">2nd</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>))</td>
+<td>Tangent<sub><font size="-1">2nd,IncidentA,B</font></sub>: X = (3.21, 1.90, 0.163) + &#955; (-1.80, 0.0427, -0.0445)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Line k</td>
+<td>If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, PerpendicularLine(IncidentPointA<sub><font size="-1">2nd</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, PerpendicularLine(IncidentPointB<sub><font size="-1">2nd</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>))</td>
+<td>k: X = (3.14, 1.90, 0.161) + » (0.0591, -0.121, -2.50)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#EB0000"><html>Line NormalLine<sub><font size="-1">2nd,InReA,B</font></sub></html></span></td>
+<td><span style="color:#EB0000">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, PerpendicularLine(Tangent<sub><font size="-1">2nd,IncidentA,B</font></sub>, k), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, PerpendicularLine(Tangent<sub><font size="-1">2nd,IncidentA,B</font></sub>, k))</span></td>
+<td><span style="color:#EB0000">NormalLine<sub><font size="-1">2nd,InReA,B</font></sub>: X = (3.14, 1.90, 0.161) + &#955; (-0.112, -4.50, 0.215)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Vector UnitVector<sub><font size="-1">NormalLineA,B,2nd</font></sub></html></td>
+<td>If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Vector(UnitVector(NormalLine<sub><font size="-1">2nd,InReA,B</font></sub>)), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Vector(UnitVector(NormalLine<sub><font size="-1">2nd,InReA,B</font></sub>)))</td>
+<td>UnitVector<sub><font size="-1">NormalLineA,B,2nd</font></sub> = (-0.0249, -0.999, 0.0477)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">B,2nd</font></sub>(3.16, 2.90, 0.114)</html></span></td>
+<td><span style="color:#6464E6">Translate(IncidentPointB<sub><font size="-1">2nd</font></sub>, Vector(-UnitVector<sub><font size="-1">NormalLineA,B,2nd</font></sub>))</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">B,2nd</font></sub> = (3.16, 2.90, 0.114)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">A,2nd</font></sub>(?, ?, ?)</html></span></td>
+<td><span style="color:#6464E6">Translate(IncidentPointA<sub><font size="-1">2nd</font></sub>, Vector(-UnitVector<sub><font size="-1">NormalLineA,B,2nd</font></sub>))</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">A,2nd</font></sub> = (?, ?, ?)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008700"><html>Plane IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub></html></span></td>
+<td><span style="color:#008700">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Plane(IncidentPointA<sub><font size="-1">1st</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>, &#913;uxiliary<sub><font size="-1">A,2nd</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Plane(IncidentPointB<sub><font size="-1">1st</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>, &#913;uxiliary<sub><font size="-1">B,2nd</font></sub>))</span></td>
+<td><span style="color:#008700">IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>: 0.00161x - 0.00329y - 0.0680z = -0.0122</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle &#946;<sub><font size="-1">2nd,Incident</font></sub></html></span></td>
+<td><span style="color:#006400">Angle(&#913;uxiliary<sub><font size="-1">B,2nd</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>, IncidentPointB<sub><font size="-1">1st</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#006400">&#946;<sub><font size="-1">2nd,Incident</font></sub> = 1.43 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#946;<sub><font size="-1">2</font></sub></html></td>
+<td>n<sub><font size="-1">Lens</font></sub> &#x2F; n<sub><font size="-1">Outside</font></sub> sin(&#946;<sub><font size="-1">2nd,Incident</font></sub>)</td>
+<td>&#946;<sub><font size="-1">2</font></sub> = 1.29</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">B,2nd,Symmetry</font></sub>(3.11, 0.899, 0.209)</html></span></td>
+<td><span style="color:#6464E6">Reflect(&#913;uxiliary<sub><font size="-1">B,2nd</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>)</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">B,2nd,Symmetry</font></sub> = (3.11, 0.899, 0.209)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point Rotate<sub><font size="-1">B,2nd,Refrection</font></sub>(?, ?, ?)</html></span></td>
+<td><span style="color:#6464E6">Rotate(&#913;uxiliary<sub><font size="-1">B,2nd,Symmetry</font></sub>, sin&#8315;&#185;(&#946;<sub><font size="-1">2</font></sub>), IncidentPointB<sub><font size="-1">2nd</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">Rotate<sub><font size="-1">B,2nd,Refrection</font></sub> = (?, ?, ?)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle &#946;<sub><font size="-1">2nd,Refraction</font></sub></html></span></td>
+<td><span style="color:#006400">Angle(&#913;uxiliary<sub><font size="-1">B,2nd,Symmetry</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>, Rotate<sub><font size="-1">B,2nd,Refrection</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#006400">&#946;<sub><font size="-1">2nd,Refraction</font></sub> = ?</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle &#945;<sub><font size="-1">2nd,Incident</font></sub></html></span></td>
+<td><span style="color:#006400">Angle(&#913;uxiliary<sub><font size="-1">A,2nd</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>, IncidentPointA<sub><font size="-1">1st</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#006400">&#945;<sub><font size="-1">2nd,Incident</font></sub> = ?</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point &#913;uxiliary<sub><font size="-1">A,2nd,Symmetry</font></sub>(?, ?, ?)</html></span></td>
+<td><span style="color:#6464E6">Reflect(&#913;uxiliary<sub><font size="-1">A,2nd</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>)</span></td>
+<td><span style="color:#6464E6">&#913;uxiliary<sub><font size="-1">A,2nd,Symmetry</font></sub> = (?, ?, ?)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#945;<sub><font size="-1">2</font></sub></html></td>
+<td>n<sub><font size="-1">Lens</font></sub> &#x2F; n<sub><font size="-1">Outside</font></sub> sin(&#945;<sub><font size="-1">2nd,Incident</font></sub>)</td>
+<td>&#945;<sub><font size="-1">2</font></sub> = ?</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#946;<sub><font size="-1">2</font></sub>'</html></td>
+<td>sin(&#946;<sub><font size="-1">2nd,Refraction</font></sub>)</td>
+<td>&#946;<sub><font size="-1">2</font></sub>' = ?</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point Rotate<sub><font size="-1">A,2nd,Refrection</font></sub>(?, ?, ?)</html></span></td>
+<td><span style="color:#6464E6">Rotate(&#913;uxiliary<sub><font size="-1">A,2nd,Symmetry</font></sub>, sin&#8315;&#185;(&#945;<sub><font size="-1">2</font></sub>), IncidentPointA<sub><font size="-1">2nd</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">Rotate<sub><font size="-1">A,2nd,Refrection</font></sub> = (?, ?, ?)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle &#945;<sub><font size="-1">2nd,Refraction</font></sub></html></span></td>
+<td><span style="color:#006400">Angle(&#913;uxiliary<sub><font size="-1">A,2nd,Symmetry</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>, Rotate<sub><font size="-1">A,2nd,Refrection</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#006400">&#945;<sub><font size="-1">2nd,Refraction</font></sub> = ?</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number &#945;<sub><font size="-1">2</font></sub>'</html></td>
+<td>sin(&#945;<sub><font size="-1">2nd,Refraction</font></sub>)</td>
+<td>&#945;<sub><font size="-1">2</font></sub>' = ?</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Ray LightIncident<sub><font size="-1">A,B,2nd</font></sub></html></td>
+<td>If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Ray(IncidentPointA<sub><font size="-1">1st</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Ray(IncidentPointB<sub><font size="-1">1st</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>))</td>
+<td>LightIncident<sub><font size="-1">A,B,2nd</font></sub>: X = (3.20, 1.91, 0.163) + &#955; (-0.0683, -0.00772, -0.00124)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#008754"><html>Point LightSource<sub><font size="-1">Symmetry</font></sub>(3.51, 1.48, 0.163)</html></span></td>
+<td><span style="color:#008754">Reflect(LightSource, Plane(LensMidplane))</span></td>
+<td><span style="color:#008754">LightSource<sub><font size="-1">Symmetry</font></sub> = (3.51, 1.48, 0.163)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400">Angle Angle±</span></td>
+<td><span style="color:#006400">Angle(Vertex<sub><font size="-1">1&#8594;1</font></sub>, A, Vertex<sub><font size="-1">1&#8594;2</font></sub>)</span></td>
+<td><span style="color:#006400">Angle± = 1.76 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number Value<sub><font size="-1">Angle&#945;</font></sub></html></td>
+<td>Angle&#945; + 0.00</td>
+<td>Value<sub><font size="-1">Angle&#945;</font></sub> = 1.76</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number Õ</td>
+<td>&nbsp;</td>
+<td>Õ = 25.0</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number Ã</td>
+<td>&#981; Value<sub><font size="-1">Angle&#945;</font></sub></td>
+<td>Ã = 44.1</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number A<sub><font size="-1">&#967;</font></sub></html></td>
+<td>x(A)</td>
+<td>A<sub><font size="-1">&#967;</font></sub> = 2.24</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number A<sub><font size="-1">&#965;</font></sub></html></td>
+<td>y(A)</td>
+<td>A<sub><font size="-1">&#965;</font></sub> = 1.64</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number A<sub><font size="-1">&#950;</font></sub></html></td>
+<td>z(A)</td>
+<td>A<sub><font size="-1">&#950;</font></sub> = 0.0800</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number B<sub><font size="-1">&#967;</font></sub></html></td>
+<td>x(B)</td>
+<td>B<sub><font size="-1">&#967;</font></sub> = 3.18</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number B<sub><font size="-1">&#965;</font></sub></html></td>
+<td>y(B)</td>
+<td>B<sub><font size="-1">&#965;</font></sub> = 3.69</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number B<sub><font size="-1">&#950;</font></sub></html></td>
+<td>z(B)</td>
+<td>B<sub><font size="-1">&#950;</font></sub> = 0.0755</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane LensExtension<sub><font size="-1">Y</font></sub></html></span></td>
+<td><span style="color:#098181">PerpendicularPlane(LensCenter, yAxis)</span></td>
+<td><span style="color:#098181">LensExtension<sub><font size="-1">Y</font></sub>: y + 0.00z = 2.21</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle AngleObtuse<sub><font size="-1">Y</font></sub></html></span></td>
+<td><span style="color:#006400">Angle(LensExtension<sub><font size="-1">Y</font></sub>, LensExtension)</span></td>
+<td><span style="color:#006400">AngleObtuse<sub><font size="-1">Y</font></sub> = 2.71 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number AngleObtuse<sub><font size="-1">Acute</font></sub></html></td>
+<td>&#960; - AngleObtuse<sub><font size="-1">Y</font></sub></td>
+<td>AngleObtuse<sub><font size="-1">Acute</font></sub> = 0.427</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane LensMidplane<sub><font size="-1">CenterA</font></sub></html></span></td>
+<td><span style="color:#098181">Plane(A, LensExtension)</span></td>
+<td><span style="color:#098181">LensMidplane<sub><font size="-1">CenterA</font></sub>: -0.414x - 0.910y + 0.00197z = -2.42</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number Area<sub><font size="-1">LensMidplane</font></sub></html></td>
+<td>Area(LensMidplane)</td>
+<td>Area<sub><font size="-1">LensMidplane</font></sub> = 1.87</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment CenterDistance<sub><font size="-1">A</font></sub></html></td>
+<td>Segment(A, LensCenter)</td>
+<td>CenterDistance<sub><font size="-1">A</font></sub> = 0.636</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Segment CenterDistance<sub><font size="-1">B</font></sub></html></td>
+<td>Segment(B, LensCenter)</td>
+<td>CenterDistance<sub><font size="-1">B</font></sub> = 1.63</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number BaseAngle±</td>
+<td>(&#960; - Angle&#945;) &#x2F; 2.00</td>
+<td>BaseAngle± = 0.689</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400">Angle Angle²</span></td>
+<td><span style="color:#006400">Angle(Vertex<sub><font size="-1">1&#8594;1</font></sub>, B, Vertex<sub><font size="-1">1&#8594;2</font></sub>)</span></td>
+<td><span style="color:#006400">Angle² = 0.886 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number BaseAngle²</td>
+<td>(&#960; - Angle&#946;) &#x2F; 2.00</td>
+<td>BaseAngle² = 1.13</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>List &#966;<sub><font size="-1">Height,Latitude</font></sub></html></td>
+<td>&nbsp;</td>
+<td>&#966;<sub><font size="-1">Height,Latitude</font></sub> = {0.00, 3.14}</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>List &#952;<sub><font size="-1">Width,Longitude</font></sub></html></span></td>
+<td>&nbsp;</td>
+<td><span style="color:#006400">&#952;<sub><font size="-1">Width,Longitude</font></sub> = {0.00, 6.28}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Text text¸</td>
+<td>&nbsp;</td>
+<td>"¸ ’Width"</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Text textÆ</td>
+<td>&nbsp;</td>
+<td>"Æ ’Height"</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400">List lA</span></td>
+<td><span style="color:#006400">Sequence(Curve((A<sub><font size="-1">&#967;</font></sub> + &#961; sin(&#966;) cos(&#952;), A<sub><font size="-1">&#965;</font></sub> + &#961; sin(&#966;) sin(&#952;), A<sub><font size="-1">&#950;</font></sub> + &#961; cos(&#966;)), &#966;, 0.00 + BaseAngle&#945;, &#960; - BaseAngle&#945;), &#952;, AngleObtuse<sub><font size="-1">Acute</font></sub> + BaseAngle&#945;, &#960; + AngleObtuse<sub><font size="-1">Acute</font></sub> - BaseAngle&#945;, &#960; &#x2F; &#963;)</span></td>
+<td><span style="color:#006400">lA = {(2.24 + 1.00 sin(Æ) cos(1.12), 1.64 + 1.00 sin(Æ) sin(1.12), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.19), 1.64 + 1.00 sin(Æ) sin(1.19), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.26), 1.64 + 1.00 sin(Æ) sin(1.26), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.33), 1.64 + 1.00 sin(Æ) sin(1.33), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.40), 1.64 + 1.00 sin(Æ) sin(1.40), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.47), 1.64 + 1.00 sin(Æ) sin(1.47), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.54), 1.64 + 1.00 sin(Æ) sin(1.54), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.61), 1.64 + 1.00 sin(Æ) sin(1.61), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.69), 1.64 + 1.00 sin(Æ) sin(1.69), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.76), 1.64 + 1.00 sin(Æ) sin(1.76), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.83), 1.64 + 1.00 sin(Æ) sin(1.83), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.90), 1.64 + 1.00 sin(Æ) sin(1.90), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.97), 1.64 + 1.00 sin(Æ) sin(1.97), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.04), 1.64 + 1.00 sin(Æ) sin(2.04), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.11), 1.64 + 1.00 sin(Æ) sin(2.11), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.18), 1.64 + 1.00 sin(Æ) sin(2.18), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.26), 1.64 + 1.00 sin(Æ) sin(2.26), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.33), 1.64 + 1.00 sin(Æ) sin(2.33), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.40), 1.64 + 1.00 sin(Æ) sin(2.40), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.47), 1.64 + 1.00 sin(Æ) sin(2.47), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.54), 1.64 + 1.00 sin(Æ) sin(2.54), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.61), 1.64 + 1.00 sin(Æ) sin(2.61), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.68), 1.64 + 1.00 sin(Æ) sin(2.68), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.75), 1.64 + 1.00 sin(Æ) sin(2.75), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(2.83), 1.64 + 1.00 sin(Æ) sin(2.83), 0.0800 + 1.00 cos(Æ))}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000">List SphereA</span></td>
+<td><span style="color:#CC0000">If(A<sub><font size="-1">&#967;</font></sub> &#8804; B<sub><font size="-1">&#967;</font></sub>, Sequence(Curve((A<sub><font size="-1">&#967;</font></sub> + &#961; sin(&#966;) cos(&#952;), A<sub><font size="-1">&#965;</font></sub> + &#961; sin(&#966;) sin(&#952;), A<sub><font size="-1">&#950;</font></sub> + &#961; cos(&#966;)), &#966;, 0.00 + BaseAngle&#945;, &#960; - BaseAngle&#945;), &#952;, -AngleObtuse<sub><font size="-1">Acute</font></sub> + BaseAngle&#945;, &#960; - AngleObtuse<sub><font size="-1">Acute</font></sub> - BaseAngle&#945;, &#960; &#x2F; &#963;), A<sub><font size="-1">&#967;</font></sub> &gt; B<sub><font size="-1">&#967;</font></sub>, Sequence(Curve((A<sub><font size="-1">&#967;</font></sub> + &#961; sin(&#966;) cos(&#952;), A<sub><font size="-1">&#965;</font></sub> + &#961; sin(&#966;) sin(&#952;), A<sub><font size="-1">&#950;</font></sub> + &#961; cos(&#966;)), &#966;, 0.00 + BaseAngle&#945;, &#960; - BaseAngle&#945;), &#952;, AngleObtuse<sub><font size="-1">Acute</font></sub> + BaseAngle&#945;, &#960; + AngleObtuse<sub><font size="-1">Acute</font></sub> - BaseAngle&#945;, &#960; &#x2F; &#963;))</span></td>
+<td><span style="color:#CC0000">SphereA = {(2.24 + 1.00 sin(Æ) cos(0.262), 1.64 + 1.00 sin(Æ) sin(0.262), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.333), 1.64 + 1.00 sin(Æ) sin(0.333), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.405), 1.64 + 1.00 sin(Æ) sin(0.405), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.476), 1.64 + 1.00 sin(Æ) sin(0.476), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.547), 1.64 + 1.00 sin(Æ) sin(0.547), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.618), 1.64 + 1.00 sin(Æ) sin(0.618), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.690), 1.64 + 1.00 sin(Æ) sin(0.690), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.761), 1.64 + 1.00 sin(Æ) sin(0.761), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.832), 1.64 + 1.00 sin(Æ) sin(0.832), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.903), 1.64 + 1.00 sin(Æ) sin(0.903), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.975), 1.64 + 1.00 sin(Æ) sin(0.975), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.05), 1.64 + 1.00 sin(Æ) sin(1.05), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.12), 1.64 + 1.00 sin(Æ) sin(1.12), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.19), 1.64 + 1.00 sin(Æ) sin(1.19), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.26), 1.64 + 1.00 sin(Æ) sin(1.26), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.33), 1.64 + 1.00 sin(Æ) sin(1.33), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.40), 1.64 + 1.00 sin(Æ) sin(1.40), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.47), 1.64 + 1.00 sin(Æ) sin(1.47), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.54), 1.64 + 1.00 sin(Æ) sin(1.54), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.62), 1.64 + 1.00 sin(Æ) sin(1.62), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.69), 1.64 + 1.00 sin(Æ) sin(1.69), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.76), 1.64 + 1.00 sin(Æ) sin(1.76), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.83), 1.64 + 1.00 sin(Æ) sin(1.83), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.90), 1.64 + 1.00 sin(Æ) sin(1.90), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.97), 1.64 + 1.00 sin(Æ) sin(1.97), 0.0800 + 1.00 cos(Æ))}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane LensExtension<sub><font size="-1">X</font></sub></html></span></td>
+<td><span style="color:#098181">PerpendicularPlane(LensCenter, xAxis)</span></td>
+<td><span style="color:#098181">LensExtension<sub><font size="-1">X</font></sub>: x + 0.00y + 0.00z = 2.51</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle AngleObtuse<sub><font size="-1">X</font></sub></html></span></td>
+<td><span style="color:#006400">Angle(LensExtension<sub><font size="-1">X</font></sub>, LensExtension)</span></td>
+<td><span style="color:#006400">AngleObtuse<sub><font size="-1">X</font></sub> = 2.00 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0000FF">List SphereB</span></td>
+<td><span style="color:#0000FF">If(A<sub><font size="-1">&#967;</font></sub> &#8804; B<sub><font size="-1">&#967;</font></sub>, Sequence(Curve((B<sub><font size="-1">&#967;</font></sub> + &#964; sin(&#966;) cos(&#952;), B<sub><font size="-1">&#965;</font></sub> + &#964; sin(&#966;) sin(&#952;), B<sub><font size="-1">&#950;</font></sub> + &#964; cos(&#966;)), &#966;, 0.00 + BaseAngle&#946;, &#960; - BaseAngle&#946;), &#952;, -&#960; - AngleObtuse<sub><font size="-1">Acute</font></sub> + BaseAngle&#946;, -AngleObtuse<sub><font size="-1">Acute</font></sub> - BaseAngle&#946;, &#960; &#x2F; (2.00&#963;)), A<sub><font size="-1">&#967;</font></sub> &gt; B<sub><font size="-1">&#967;</font></sub>, Sequence(Curve((B<sub><font size="-1">&#967;</font></sub> + &#964; sin(&#966;) cos(&#952;), B<sub><font size="-1">&#965;</font></sub> + &#964; sin(&#966;) sin(&#952;), B<sub><font size="-1">&#950;</font></sub> + &#964; cos(&#966;)), &#966;, 0.00 + BaseAngle&#946;, &#960; - BaseAngle&#946;), &#952;, -&#960; + AngleObtuse<sub><font size="-1">Acute</font></sub> + BaseAngle&#946;, AngleObtuse<sub><font size="-1">Acute</font></sub> - BaseAngle&#946;, &#960; &#x2F; (2.00&#963;)))</span></td>
+<td><span style="color:#0000FF">SphereB = {(3.18 + 1.80 sin(Æ) cos(-2.44), 3.69 + 1.80 sin(Æ) sin(-2.44), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.41), 3.69 + 1.80 sin(Æ) sin(-2.41), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.37), 3.69 + 1.80 sin(Æ) sin(-2.37), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.33), 3.69 + 1.80 sin(Æ) sin(-2.33), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.30), 3.69 + 1.80 sin(Æ) sin(-2.30), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.26), 3.69 + 1.80 sin(Æ) sin(-2.26), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.23), 3.69 + 1.80 sin(Æ) sin(-2.23), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.19), 3.69 + 1.80 sin(Æ) sin(-2.19), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.16), 3.69 + 1.80 sin(Æ) sin(-2.16), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.12), 3.69 + 1.80 sin(Æ) sin(-2.12), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.08), 3.69 + 1.80 sin(Æ) sin(-2.08), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.05), 3.69 + 1.80 sin(Æ) sin(-2.05), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.01), 3.69 + 1.80 sin(Æ) sin(-2.01), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.98), 3.69 + 1.80 sin(Æ) sin(-1.98), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.94), 3.69 + 1.80 sin(Æ) sin(-1.94), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.91), 3.69 + 1.80 sin(Æ) sin(-1.91), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.87), 3.69 + 1.80 sin(Æ) sin(-1.87), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.84), 3.69 + 1.80 sin(Æ) sin(-1.84), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.80), 3.69 + 1.80 sin(Æ) sin(-1.80), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.76), 3.69 + 1.80 sin(Æ) sin(-1.76), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.73), 3.69 + 1.80 sin(Æ) sin(-1.73), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.69), 3.69 + 1.80 sin(Æ) sin(-1.69), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.66), 3.69 + 1.80 sin(Æ) sin(-1.66), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.62), 3.69 + 1.80 sin(Æ) sin(-1.62), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.59), 3.69 + 1.80 sin(Æ) sin(-1.59), 0.0755 + 1.80 cos(Æ))}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number È</td>
+<td>&nbsp;</td>
+<td>È = 2.00</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000">Parametric Curve c</span></td>
+<td><span style="color:#CC0000">Element(SphereA, &#968;)</span></td>
+<td><span style="color:#CC0000">c:(2.24 + 1.00 sin(Æ) cos(0.333), 1.64 + 1.00 sin(Æ) sin(0.333), 0.0800 + 1.00 cos(Æ))</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>List Matrix<sub><font size="-1">Seq</font></sub></html></span></td>
+<td><span style="color:#006400">Sequence({{sin((&#954; &#960;) &#x2F; &#981;), 0.00, 0.00}, {0.00, sin((&#954; &#960;) &#x2F; &#981;), 0.00}, {0.00, 0.00, sin((&#954; &#960;) &#x2F; &#981;)}}, &#954;, 1.00, &#981;, 1.00)</span></td>
+<td><span style="color:#006400">Matrix<sub><font size="-1">Seq</font></sub> = {{{0.125, 0.00, 0.00}, {0.00, 0.125, 0.00}, {0.00, 0.00, 0.125}}, {{0.249, 0.00, 0.00}, {0.00, 0.249, 0.00}, {0.00, 0.00, 0.249}}, {{0.368, 0.00, 0.00}, {0.00, 0.368, 0.00}, {0.00, 0.00, 0.368}}, {{0.482, 0.00, 0.00}, {0.00, 0.482, 0.00}, {0.00, 0.00, 0.482}}, {{0.588, 0.00, 0.00}, {0.00, 0.588, 0.00}, {0.00, 0.00, 0.588}}, {{0.685, 0.00, 0.00}, {0.00, 0.685, 0.00}, {0.00, 0.00, 0.685}}, {{0.771, 0.00, 0.00}, {0.00, 0.771, 0.00}, {0.00, 0.00, 0.771}}, {{0.844, 0.00, 0.00}, {0.00, 0.844, 0.00}, {0.00, 0.00, 0.844}}, {{0.905, 0.00, 0.00}, {0.00, 0.905, 0.00}, {0.00, 0.00, 0.905}}, {{0.951, 0.00, 0.00}, {0.00, 0.951, 0.00}, {0.00, 0.00, 0.951}}, {{0.982, 0.00, 0.00}, {0.00, 0.982, 0.00}, {0.00, 0.00, 0.982}}, {{0.998, 0.00, 0.00}, {0.00, 0.998, 0.00}, {0.00, 0.00, 0.998}}, {{0.998, 0.00, 0.00}, {0.00, 0.998, 0.00}, {0.00, 0.00, 0.998}}, {{0.982, 0.00, 0.00}, {0.00, 0.982, 0.00}, {0.00, 0.00, 0.982}}, {{0.951, 0.00, 0.00}, {0.00, 0.951, 0.00}, {0.00, 0.00, 0.951}}, {{0.905, 0.00, 0.00}, {0.00, 0.905, 0.00}, {0.00, 0.00, 0.905}}, {{0.844, 0.00, 0.00}, {0.00, 0.844, 0.00}, {0.00, 0.00, 0.844}}, {{0.771, 0.00, 0.00}, {0.00, 0.771, 0.00}, {0.00, 0.00, 0.771}}, {{0.685, 0.00, 0.00}, {0.00, 0.685, 0.00}, {0.00, 0.00, 0.685}}, {{0.588, 0.00, 0.00}, {0.00, 0.588, 0.00}, {0.00, 0.00, 0.588}}, {{0.482, 0.00, 0.00}, {0.00, 0.482, 0.00}, {0.00, 0.00, 0.482}}, {{0.368, 0.00, 0.00}, {0.00, 0.368, 0.00}, {0.00, 0.00, 0.368}}, {{0.249, 0.00, 0.00}, {0.00, 0.249, 0.00}, {0.00, 0.00, 0.249}}, {{0.125, 0.00, 0.00}, {0.00, 0.125, 0.00}, {0.00, 0.00, 0.125}}, {{0.00, 0.00, 0.00}, {0.00, 0.00, 0.00}, {0.00, 0.00, 0.00}}}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number I2</td>
+<td>&nbsp;</td>
+<td>I2 = ?</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400">List Matrix</span></td>
+<td><span style="color:#006400">{{sin(&#960; &#x2F; &#981; &#981;), 0.00, 0.00}, {0.00, sin(&#960; &#x2F; &#981; &#981;), 0.00}, {0.00, 0.00, sin(&#960; &#x2F; &#981; &#981;)}}</span></td>
+<td><span style="color:#006400">Matrix = {{0.00, 0.00, 0.00}, {0.00, 0.00, 0.00}, {0.00, 0.00, 0.00}}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>List &#932;<sub><font size="-1">5</font></sub></html></span></td>
+<td><span style="color:#006400">Element(Sequence({{sin((&#954; &#960;) &#x2F; &#981;), 0.00, 0.00}, {0.00, sin((&#954; &#960;) &#x2F; &#981;), 0.00}, {0.00, 0.00, sin((&#954; &#960;) &#x2F; &#981;)}}, &#954;, 1.00, &#981;, 1.00), 1.00)</span></td>
+<td><span style="color:#006400">&#932;<sub><font size="-1">5</font></sub> = {{0.125, 0.00, 0.00}, {0.00, 0.125, 0.00}, {0.00, 0.00, 0.125}}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000">List SphereLineA</span></td>
+<td><span style="color:#CC0000">Sequence(Element(SphereA, &#954;), &#954;, 1.00, &#981;, 1.00)</span></td>
+<td><span style="color:#CC0000">SphereLineA = {(2.24 + 1.00 sin(Æ) cos(0.262), 1.64 + 1.00 sin(Æ) sin(0.262), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.333), 1.64 + 1.00 sin(Æ) sin(0.333), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.405), 1.64 + 1.00 sin(Æ) sin(0.405), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.476), 1.64 + 1.00 sin(Æ) sin(0.476), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.547), 1.64 + 1.00 sin(Æ) sin(0.547), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.618), 1.64 + 1.00 sin(Æ) sin(0.618), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.690), 1.64 + 1.00 sin(Æ) sin(0.690), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.761), 1.64 + 1.00 sin(Æ) sin(0.761), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.832), 1.64 + 1.00 sin(Æ) sin(0.832), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.903), 1.64 + 1.00 sin(Æ) sin(0.903), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(0.975), 1.64 + 1.00 sin(Æ) sin(0.975), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.05), 1.64 + 1.00 sin(Æ) sin(1.05), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.12), 1.64 + 1.00 sin(Æ) sin(1.12), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.19), 1.64 + 1.00 sin(Æ) sin(1.19), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.26), 1.64 + 1.00 sin(Æ) sin(1.26), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.33), 1.64 + 1.00 sin(Æ) sin(1.33), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.40), 1.64 + 1.00 sin(Æ) sin(1.40), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.47), 1.64 + 1.00 sin(Æ) sin(1.47), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.54), 1.64 + 1.00 sin(Æ) sin(1.54), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.62), 1.64 + 1.00 sin(Æ) sin(1.62), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.69), 1.64 + 1.00 sin(Æ) sin(1.69), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.76), 1.64 + 1.00 sin(Æ) sin(1.76), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.83), 1.64 + 1.00 sin(Æ) sin(1.83), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.90), 1.64 + 1.00 sin(Æ) sin(1.90), 0.0800 + 1.00 cos(Æ)), (2.24 + 1.00 sin(Æ) cos(1.97), 1.64 + 1.00 sin(Æ) sin(1.97), 0.0800 + 1.00 cos(Æ))}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0000FF">List SphereLineB</span></td>
+<td><span style="color:#0000FF">Sequence(Element(SphereB, &#954;), &#954;, 1.00, &#981;, 1.00)</span></td>
+<td><span style="color:#0000FF">SphereLineB = {(3.18 + 1.80 sin(Æ) cos(-2.44), 3.69 + 1.80 sin(Æ) sin(-2.44), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.41), 3.69 + 1.80 sin(Æ) sin(-2.41), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.37), 3.69 + 1.80 sin(Æ) sin(-2.37), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.33), 3.69 + 1.80 sin(Æ) sin(-2.33), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.30), 3.69 + 1.80 sin(Æ) sin(-2.30), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.26), 3.69 + 1.80 sin(Æ) sin(-2.26), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.23), 3.69 + 1.80 sin(Æ) sin(-2.23), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.19), 3.69 + 1.80 sin(Æ) sin(-2.19), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.16), 3.69 + 1.80 sin(Æ) sin(-2.16), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.12), 3.69 + 1.80 sin(Æ) sin(-2.12), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.08), 3.69 + 1.80 sin(Æ) sin(-2.08), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.05), 3.69 + 1.80 sin(Æ) sin(-2.05), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-2.01), 3.69 + 1.80 sin(Æ) sin(-2.01), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.98), 3.69 + 1.80 sin(Æ) sin(-1.98), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.94), 3.69 + 1.80 sin(Æ) sin(-1.94), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.91), 3.69 + 1.80 sin(Æ) sin(-1.91), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.87), 3.69 + 1.80 sin(Æ) sin(-1.87), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.84), 3.69 + 1.80 sin(Æ) sin(-1.84), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.80), 3.69 + 1.80 sin(Æ) sin(-1.80), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.76), 3.69 + 1.80 sin(Æ) sin(-1.76), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.73), 3.69 + 1.80 sin(Æ) sin(-1.73), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.69), 3.69 + 1.80 sin(Æ) sin(-1.69), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.66), 3.69 + 1.80 sin(Æ) sin(-1.66), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.62), 3.69 + 1.80 sin(Æ) sin(-1.62), 0.0755 + 1.80 cos(Æ)), (3.18 + 1.80 sin(Æ) cos(-1.59), 3.69 + 1.80 sin(Æ) sin(-1.59), 0.0755 + 1.80 cos(Æ))}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000">List SpherePointsA</span></td>
+<td><span style="color:#CC0000">Sequence(Point(Element(SphereA, &#954;)), &#954;, 1.00, &#981;, 1.00)</span></td>
+<td><span style="color:#CC0000">SpherePointsA = {(2.86, 1.80, -0.692), (2.84, 1.84, -0.692), (2.83, 1.89, -0.692), (2.81, 1.93, -0.692), (2.79, 1.97, -0.692), (2.76, 2.00, -0.692), (2.73, 2.04, -0.692), (2.70, 2.07, -0.692), (2.67, 2.11, -0.692), (2.64, 2.14, -0.692), (2.60, 2.16, -0.692), (2.56, 2.19, -0.692), (2.52, 2.21, -0.692), (2.48, 2.23, -0.692), (2.44, 2.24, -0.692), (2.40, 2.25, -0.692), (2.35, 2.26, -0.692), (2.31, 2.27, -0.692), (2.26, 2.27, -0.692), (2.22, 2.27, -0.692), (2.17, 2.27, -0.692), (2.13, 2.26, -0.692), (2.08, 2.25, -0.692), (2.04, 2.24, -0.692), (2.00, 2.22, -0.692)}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#0000FF">List SpherePointsB</span></td>
+<td><span style="color:#0000FF">Sequence(Point(Element(SphereB, &#954;)), &#954;, 1.00, &#981;, 1.00)</span></td>
+<td><span style="color:#0000FF">SpherePointsB = {(1.80, 2.53, 0.0473), (1.85, 2.49, 0.0473), (1.89, 2.44, 0.0473), (1.94, 2.39, 0.0473), (1.98, 2.35, 0.0473), (2.03, 2.31, 0.0473), (2.08, 2.27, 0.0473), (2.13, 2.23, 0.0473), (2.19, 2.19, 0.0473), (2.24, 2.16, 0.0473), (2.30, 2.13, 0.0473), (2.35, 2.10, 0.0473), (2.41, 2.07, 0.0473), (2.47, 2.04, 0.0473), (2.53, 2.02, 0.0473), (2.59, 2.00, 0.0473), (2.65, 1.98, 0.0473), (2.71, 1.96, 0.0473), (2.77, 1.94, 0.0473), (2.83, 1.93, 0.0473), (2.90, 1.92, 0.0473), (2.96, 1.91, 0.0473), (3.03, 1.90, 0.0473), (3.09, 1.90, 0.0473), (3.15, 1.90, 0.0473)}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400">List l1</span></td>
+<td><span style="color:#006400">Sequence(Dilate(Element(SphereA, &#954;), (sin(((&#954; - 1.00) &#960;) &#x2F; &#981;))^(1.00 &#x2F; 8.00), Point(Element(SphereA, &#954;))), &#954;, 1.00, &#981;, 1.00)</span></td>
+<td><span style="color:#006400">l1 = {(0.00 (2.24 + 1.00 sin(Æ) cos(0.262) - 2.86) + 2.86, 0.00 (1.64 + 1.00 sin(Æ) sin(0.262) - 1.80) + 1.80, 0.00 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.771 (2.24 + 1.00 sin(Æ) cos(0.333) - 2.84) + 2.84, 0.771 (1.64 + 1.00 sin(Æ) sin(0.333) - 1.84) + 1.84, 0.771 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.840 (2.24 + 1.00 sin(Æ) cos(0.405) - 2.83) + 2.83, 0.840 (1.64 + 1.00 sin(Æ) sin(0.405) - 1.89) + 1.89, 0.840 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.883 (2.24 + 1.00 sin(Æ) cos(0.476) - 2.81) + 2.81, 0.883 (1.64 + 1.00 sin(Æ) sin(0.476) - 1.93) + 1.93, 0.883 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.913 (2.24 + 1.00 sin(Æ) cos(0.547) - 2.79) + 2.79, 0.913 (1.64 + 1.00 sin(Æ) sin(0.547) - 1.97) + 1.97, 0.913 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.936 (2.24 + 1.00 sin(Æ) cos(0.618) - 2.76) + 2.76, 0.936 (1.64 + 1.00 sin(Æ) sin(0.618) - 2.00) + 2.00, 0.936 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.954 (2.24 + 1.00 sin(Æ) cos(0.690) - 2.73) + 2.73, 0.954 (1.64 + 1.00 sin(Æ) sin(0.690) - 2.04) + 2.04, 0.954 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.968 (2.24 + 1.00 sin(Æ) cos(0.761) - 2.70) + 2.70, 0.968 (1.64 + 1.00 sin(Æ) sin(0.761) - 2.07) + 2.07, 0.968 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.979 (2.24 + 1.00 sin(Æ) cos(0.832) - 2.67) + 2.67, 0.979 (1.64 + 1.00 sin(Æ) sin(0.832) - 2.11) + 2.11, 0.979 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.988 (2.24 + 1.00 sin(Æ) cos(0.903) - 2.64) + 2.64, 0.988 (1.64 + 1.00 sin(Æ) sin(0.903) - 2.14) + 2.14, 0.988 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.994 (2.24 + 1.00 sin(Æ) cos(0.975) - 2.60) + 2.60, 0.994 (1.64 + 1.00 sin(Æ) sin(0.975) - 2.16) + 2.16, 0.994 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.998 (2.24 + 1.00 sin(Æ) cos(1.05) - 2.56) + 2.56, 0.998 (1.64 + 1.00 sin(Æ) sin(1.05) - 2.19) + 2.19, 0.998 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (1.00 (2.24 + 1.00 sin(Æ) cos(1.12) - 2.52) + 2.52, 1.00 (1.64 + 1.00 sin(Æ) sin(1.12) - 2.21) + 2.21, 1.00 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (1.00 (2.24 + 1.00 sin(Æ) cos(1.19) - 2.48) + 2.48, 1.00 (1.64 + 1.00 sin(Æ) sin(1.19) - 2.23) + 2.23, 1.00 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.998 (2.24 + 1.00 sin(Æ) cos(1.26) - 2.44) + 2.44, 0.998 (1.64 + 1.00 sin(Æ) sin(1.26) - 2.24) + 2.24, 0.998 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.994 (2.24 + 1.00 sin(Æ) cos(1.33) - 2.40) + 2.40, 0.994 (1.64 + 1.00 sin(Æ) sin(1.33) - 2.25) + 2.25, 0.994 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.988 (2.24 + 1.00 sin(Æ) cos(1.40) - 2.35) + 2.35, 0.988 (1.64 + 1.00 sin(Æ) sin(1.40) - 2.26) + 2.26, 0.988 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.979 (2.24 + 1.00 sin(Æ) cos(1.47) - 2.31) + 2.31, 0.979 (1.64 + 1.00 sin(Æ) sin(1.47) - 2.27) + 2.27, 0.979 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.968 (2.24 + 1.00 sin(Æ) cos(1.54) - 2.26) + 2.26, 0.968 (1.64 + 1.00 sin(Æ) sin(1.54) - 2.27) + 2.27, 0.968 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.954 (2.24 + 1.00 sin(Æ) cos(1.62) - 2.22) + 2.22, 0.954 (1.64 + 1.00 sin(Æ) sin(1.62) - 2.27) + 2.27, 0.954 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.936 (2.24 + 1.00 sin(Æ) cos(1.69) - 2.17) + 2.17, 0.936 (1.64 + 1.00 sin(Æ) sin(1.69) - 2.27) + 2.27, 0.936 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.913 (2.24 + 1.00 sin(Æ) cos(1.76) - 2.13) + 2.13, 0.913 (1.64 + 1.00 sin(Æ) sin(1.76) - 2.26) + 2.26, 0.913 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.883 (2.24 + 1.00 sin(Æ) cos(1.83) - 2.08) + 2.08, 0.883 (1.64 + 1.00 sin(Æ) sin(1.83) - 2.25) + 2.25, 0.883 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.840 (2.24 + 1.00 sin(Æ) cos(1.90) - 2.04) + 2.04, 0.840 (1.64 + 1.00 sin(Æ) sin(1.90) - 2.24) + 2.24, 0.840 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692), (0.771 (2.24 + 1.00 sin(Æ) cos(1.97) - 2.00) + 2.00, 0.771 (1.64 + 1.00 sin(Æ) sin(1.97) - 2.22) + 2.22, 0.771 (0.0800 + 1.00 cos(Æ) + 0.692) - 0.692)}</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6">Point DPA</span></td>
+<td><span style="color:#6464E6">PointIn(a)</span></td>
+<td><span style="color:#6464E6">DPA = (2.65, 2.55, -0.000528)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Line DLA</td>
+<td>PerpendicularLine(DPA, LensExtension)</td>
+<td>DLA: X = (2.65, 2.55, -0.000528) + » (-0.414, -0.910, 0.00197)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444">Point ProjectionDPA</span></td>
+<td><span style="color:#444444">Intersect(DLA, LensExtension)</span></td>
+<td><span style="color:#444444">ProjectionDPA = (2.50, 2.22, 0.000183)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Vector DiscriminantVectorA</td>
+<td>Vector(DPA, ProjectionDPA)</td>
+<td>DiscriminantVectorA = (-0.149, -0.329, 0.000711)</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number DPA<sub><font size="-1">&#967;</font></sub></html></td>
+<td>x(DPA)</td>
+<td>DPA<sub><font size="-1">&#967;</font></sub> = 2.65</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number DPA<sub><font size="-1">&#965;</font></sub></html></td>
+<td>y(DPA)</td>
+<td>DPA<sub><font size="-1">&#965;</font></sub> = 2.55</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number DPA<sub><font size="-1">&#950;</font></sub></html></td>
+<td>z(DPA)</td>
+<td>DPA<sub><font size="-1">&#950;</font></sub> = -0.000528</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Number DVA<sub><font size="-1">&#950;</font></sub></html></td>
+<td>z(DiscriminantVectorA)</td>
+<td>DVA<sub><font size="-1">&#950;</font></sub> = 0.000711</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444">Point DOPA</span></td>
+<td><span style="color:#444444">If(DVA<sub><font size="-1">&#950;</font></sub> &#8805; 0.00, (DPA<sub><font size="-1">&#967;</font></sub>, DPA<sub><font size="-1">&#965;</font></sub>, DPA<sub><font size="-1">&#950;</font></sub>))</span></td>
+<td><span style="color:#444444">DOPA = (2.65, 2.55, -0.000528)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CD4D00"><html>Line NormalLine<sub><font size="-1">1st,InReA,B</font></sub></html></span></td>
+<td><span style="color:#CD4D00">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, PerpendicularLine(Tangent<sub><font size="-1">ArcB&#964;1,IncidentA</font></sub>, h), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, PerpendicularLine(Tangent<sub><font size="-1">ArcA&#961;1,IncidentB</font></sub>, i))</span></td>
+<td><span style="color:#CD4D00">NormalLine<sub><font size="-1">1st,InReA,B</font></sub>: X = (3.20, 1.91, 0.163) + &#955; (0.942, 0.264, 0.0812)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point Rotate<sub><font size="-1">B,2nd,Refraction,TIR</font></sub>(2.15, 2.06, 0.130)</html></span></td>
+<td><span style="color:#6464E6">Rotate(&#913;uxiliary<sub><font size="-1">B,2nd</font></sub>, -&#946;<sub><font size="-1">2nd,Incident</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">Rotate<sub><font size="-1">B,2nd,Refraction,TIR</font></sub> = (2.15, 2.06, 0.130)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#6464E6"><html>Point Rotate<sub><font size="-1">A,2nd,Refraction,TIR</font></sub>(?, ?, ?)</html></span></td>
+<td><span style="color:#6464E6">Rotate(&#913;uxiliary<sub><font size="-1">A,2nd</font></sub>, -&#945;<sub><font size="-1">2nd,Incident</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>)</span></td>
+<td><span style="color:#6464E6">Rotate<sub><font size="-1">A,2nd,Refraction,TIR</font></sub> = (?, ?, ?)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#993300"><html>Ray LightRefraction<sub><font size="-1">A,B,2nd</font></sub></html></span></td>
+<td><span style="color:#993300">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#945;<sub><font size="-1">2</font></sub> &#8804; 1.00, Ray(IncidentPointA<sub><font size="-1">2nd</font></sub>, Rotate<sub><font size="-1">A,2nd,Refrection</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#946;<sub><font size="-1">2</font></sub> &#8804; 1.00, Ray(IncidentPointB<sub><font size="-1">2nd</font></sub>, Rotate<sub><font size="-1">B,2nd,Refrection</font></sub>), &#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#945;<sub><font size="-1">2</font></sub> &gt; 1.00, Ray(IncidentPointA<sub><font size="-1">2nd</font></sub>, Rotate<sub><font size="-1">A,2nd,Refraction,TIR</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#946;<sub><font size="-1">2</font></sub> &gt; 1.00, Ray(IncidentPointB<sub><font size="-1">2nd</font></sub>, Rotate<sub><font size="-1">B,2nd,Refraction,TIR</font></sub>))</span></td>
+<td><span style="color:#993300">LightRefraction<sub><font size="-1">A,B,2nd</font></sub>: X = (3.14, 1.90, 0.161) + &#955; (-0.987, 0.159, -0.0310)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle &#946;<sub><font size="-1">2nd,Refraction,TIR</font></sub></html></span></td>
+<td><span style="color:#006400">If(&#946;<sub><font size="-1">2</font></sub> &#8805; 1.00, Angle(Rotate<sub><font size="-1">B,2nd,Refraction,TIR</font></sub>, IncidentPointB<sub><font size="-1">2nd</font></sub>, &#913;uxiliary<sub><font size="-1">B,2nd</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>))</span></td>
+<td><span style="color:#006400">&#946;<sub><font size="-1">2nd,Refraction,TIR</font></sub> = 1.43 rad</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#006400"><html>Angle &#945;<sub><font size="-1">2nd,Refraction,TIR</font></sub></html></span></td>
+<td><span style="color:#006400">If(&#945;<sub><font size="-1">2</font></sub> &#8805; 1.00, Angle(Rotate<sub><font size="-1">A,2nd,Refraction,TIR</font></sub>, IncidentPointA<sub><font size="-1">2nd</font></sub>, &#913;uxiliary<sub><font size="-1">A,2nd</font></sub>, IntersectionZone<sub><font size="-1">A,B,2ndInRe</font></sub>))</span></td>
+<td><span style="color:#006400">&#945;<sub><font size="-1">2nd,Refraction,TIR</font></sub> = ?</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#098181"><html>Plane IntersectionFindingZone<sub><font size="-1">A,B,3rdInRe,TIR</font></sub></html></span></td>
+<td><span style="color:#098181">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#945;<sub><font size="-1">2</font></sub> &#8805; 1.00, Plane(B, LightRefraction<sub><font size="-1">A,B,2nd</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#946;<sub><font size="-1">2</font></sub> &#8805; 1.00, Plane(A, LightRefraction<sub><font size="-1">A,B,2nd</font></sub>))</span></td>
+<td><span style="color:#098181">IntersectionFindingZone<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>: -0.0211x - 0.0527y + 0.400z = -0.102</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Circle Circle<sub><font size="-1">A,B,3rdInRe,TIR</font></sub></html></td>
+<td>If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#945;<sub><font size="-1">2</font></sub> &#8805; 1.00, Circle(B, &#964;, IntersectionFindingZone<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#946;<sub><font size="-1">2</font></sub> &#8805; 1.00, Circle(A, &#961;, IntersectionFindingZone<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>))</td>
+<td>Circle<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>: X = (2.24, 1.64, 0.0800) + (0.928 cos(t) + 0.368 sin(t), -0.371 cos(t) + 0.919 sin(t), 0.00 cos(t) + 0.141 sin(t))</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">TIR&#8594;1</font></sub>(1.81, 2.53, 0.175)</html></span></td>
+<td><span style="color:#444444">Intersect(LensMidplane, Circle<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>, 1.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">TIR&#8594;1</font></sub> = (1.81, 2.53, 0.175)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444"><html>Point Vertex<sub><font size="-1">TIR&#8594;2</font></sub>(3.21, 1.90, 0.165)</html></span></td>
+<td><span style="color:#444444">Intersect(LensMidplane, Circle<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>, 2.00)</span></td>
+<td><span style="color:#444444">Vertex<sub><font size="-1">TIR&#8594;2</font></sub> = (3.21, 1.90, 0.165)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#8552EB"><html>Arc Arc<sub><font size="-1">A,B,3rdInRe,TIR</font></sub></html></span></td>
+<td><span style="color:#8552EB">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#945;<sub><font size="-1">2</font></sub> &#8805; 1.00, CircularArc(B, Vertex<sub><font size="-1">TIR&#8594;1</font></sub>, Vertex<sub><font size="-1">TIR&#8594;2</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00 &#8743; &#946;<sub><font size="-1">2</font></sub> &#8805; 1.00, CircularArc(A, Vertex<sub><font size="-1">TIR&#8594;1</font></sub>, Vertex<sub><font size="-1">TIR&#8594;2</font></sub>))</span></td>
+<td><span style="color:#8552EB">Arc<sub><font size="-1">A,B,3rdInRe,TIR</font></sub> = 1.75</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><html>Circle Circle<sub><font size="-1">A,B,1stInRe</font></sub></html></td>
+<td>If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Circle(A, &#961;, ABC<sub><font size="-1">1</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Circle(B, &#964;, ABC<sub><font size="-1">1</font></sub>))</td>
+<td>Circle<sub><font size="-1">A,B,1stInRe</font></sub>: X = (3.18, 3.69, 0.0755) + (0.774 cos(t) + 1.62 sin(t), 1.63 cos(t) - 0.769 sin(t), 0.00 cos(t) + 0.197 sin(t))</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#CC0000"><html>Arc Arc<sub><font size="-1">A,B,1stInRe</font></sub></html></span></td>
+<td><span style="color:#CC0000">If(&#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, CircularArc(B, Vertex<sub><font size="-1">1&#8594;1</font></sub>, Vertex<sub><font size="-1">1&#8594;2</font></sub>), &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, CircularArc(A, Vertex<sub><font size="-1">1&#8594;1</font></sub>, Vertex<sub><font size="-1">1&#8594;2</font></sub>))</span></td>
+<td><span style="color:#CC0000">Arc<sub><font size="-1">A,B,1stInRe</font></sub> = 1.76</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#444444">Point F</span></td>
+<td><span style="color:#444444">If((&#945;<sub><font size="-1">2</font></sub> &#8805; 1.00 &#8744; &#946;<sub><font size="-1">2</font></sub> &#8805; 1.00) &#8743; IsDefined(Intersect(LightRefraction<sub><font size="-1">A,B,2nd</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>)), Intersect(LightRefraction<sub><font size="-1">A,B,2nd</font></sub>, Arc<sub><font size="-1">A,B,2ndInRe</font></sub>, 1.00), (&#945;<sub><font size="-1">2</font></sub> &#8805; 1.00 &#8744; &#946;<sub><font size="-1">2</font></sub> &#8805; 1.00) &#8743; IsDefined(Intersect(LightRefraction<sub><font size="-1">A,B,2nd</font></sub>, Arc<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>)), Intersect(LightRefraction<sub><font size="-1">A,B,2nd</font></sub>, Arc<sub><font size="-1">A,B,3rdInRe,TIR</font></sub>, 1.00))</span></td>
+<td><span style="color:#444444">F = (2.65, 1.98, 0.146)</span></td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td>Number segmen</td>
+<td>&nbsp;</td>
+<td>segmen = 1.00</td>
+</tr>
+<tr style='vertical-align:baseline;'>
+<td><span style="color:#993300"><html>Segment IncidentSegment<sub><font size="-1">A,B,3rd,TIR</font></sub></html></span></td>
+<td><span style="color:#993300">If((&#945;<sub><font size="-1">2</font></sub> &#8805; 1.00 &#8744; &#946;<sub><font size="-1">2</font></sub> &#8805; 1.00) &#8743; &#945;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Segment(IncidentPointA<sub><font size="-1">2nd</font></sub>, F), (&#945;<sub><font size="-1">2</font></sub> &#8805; 1.00 &#8744; &#946;<sub><font size="-1">2</font></sub> &#8805; 1.00) &#8743; &#946;<sub><font size="-1">1st,Incident</font></sub> &lt; &#960; &#x2F; 2.00, Segment(IncidentPointB<sub><font size="-1">2nd</font></sub>, F))</span></td>
+<td><span style="color:#993300">IncidentSegment<sub><font size="-1">A,B,3rd,TIR</font></sub> = 0.490</span></td>
+</tr>
+</table>
+Created with <a href="https://www.geogebra.org/" target="_blank" >GeoGebra</a>
+<!-- Base64 string so that this file can be opened in GeoGebra with File -> Open -->
+<applet width='1' height='1' code='' style="display:none">
+<param name="ggbBase64" value="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">
+</applet>
+</body>
+</html>
