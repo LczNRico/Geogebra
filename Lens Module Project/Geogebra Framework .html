@@ -14,12 +14,13 @@ var parameters = {
 "id": "ggbApplet",
 "width":1536,
 "height":826,
-"showMenuBar":true,
-"showAlgebraInput":true,
-"showToolBar":true,
+"showMenuBar":true, /*右上角的檔案、開啟等工具*/
+/*如果showMenuBar=true,showToolBar=false則上方工具列完整*/   /*如果showMenuBar=false,showToolBar=true則整個工具欄消失，但代數區可用*/   /*如果showMenuBar=false,showToolBar=true則上方具欄和代數區皆不能用*/
+"showAlgebraInput":true, /*代數區*/
+"showToolBar":true, /*上面那牌工具欄*/
 "customToolBar":"0 | 1 501 5 19 , 67 | 2 15 45 18 , 7 37 | 514 3 9 , 13 44 , 47 | 16 51 | 551 550 11 ,  20 22 21 23 , 55 56 57 , 12 | 69 | 510 511 , 512 513 | 533 531 , 534 532 , 522 523 , 537 536 , 535 , 538 | 521 520 | 36 , 38 49 560 | 571 30 29 570 31 33 | 17 | 540 40 41 42 , 27 28 35 , 6 , 502",
-"showToolBarHelp":true,
-"showResetIcon":false,
+"showToolBarHelp":false, /*左下角黑色的工具註解*/
+"showResetIcon":true,
 "enableLabelDrags":false,
 "enableShiftDragZoom":true,
 "enableRightClick":false,
@@ -27,7 +28,7 @@ var parameters = {
 "useBrowserForJS":false,
 "allowStyleBar":false,
 "preventFocus":false,
-"showZoomButtons":true,
+"showZoomButtons":false, /*右下角放大鏡縮小鏡*/
 "capturingThreshold":3,
 // add code here to run when the applet starts
 "appletOnLoad":function(api){ /* api.evalCommand('Segment((1,2),(3,4))');*/ },
@@ -38,7 +39,7 @@ var parameters = {
 "clickToLoad":false,
 "appName":"classic",
 "buttonRounding":0.7,
-"buttonShadows":false,
+"buttonShadows":true,
 "language":"en",
 // use this instead of ggbBase64 to load a material from geogebra.org
 // "material_id":"RHYH3UQ8",
