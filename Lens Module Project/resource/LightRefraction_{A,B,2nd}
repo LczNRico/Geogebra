@@ -1,0 +1,11 @@
+LightRefraction_{A,B,2nd} = If
+  [α_{1st,Incident} < π/2 ∧ α_{2} < 1,
+    Ray[IncidentPointA_{2nd}, Rotate_{A,2nd,Refrection}],
+    If[β_{1st,Incident} < π/2 ∧ β_{2} < 1,
+        Ray[IncidentPointB_{2nd}, Rotate_{B,2nd,Refrection}],
+        If[α_{1st,Incident} < π/2 ∧ α_{2} ≥ 1,
+            Ray[IncidentPointA_{2nd}, Rotate_{A,1st,TIR}],
+            Ray[IncidentPointB_{2nd}, Rotate_{B,1st,TIR}]
+        ]
+    ]
+]
