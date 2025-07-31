@@ -1,0 +1,3718 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoGebra 3D透鏡模組 - 完整物件應變關係樹狀圖 (229個物件)</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        
+        .summary {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .tree-container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .object-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .tree {
+            white-space: pre;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .no-dependency {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .navigation {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .navigation h4 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+        
+        .navigation a {
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+            padding: 3px 0;
+            font-size: 13px;
+        }
+        
+        .navigation a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 1400px) {
+            .navigation {
+                display: none;
+            }
+        }
+        
+        .section-header {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 30px 0 20px 0;
+        }
+        
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        
+        .note {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        
+        .note strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <h4>快速導航</h4>
+        <a href="#summary">總覽</a>
+        <a href="#objects-1-20">物件 1-20</a>
+        <a href="#objects-21-40">物件 21-40</a>
+        <a href="#objects-41-60">物件 41-60</a>
+        <a href="#objects-61-80">物件 61-80</a>
+        <a href="#objects-81-100">物件 81-100</a>
+        <a href="#objects-101-120">物件 101-120</a>
+        <a href="#objects-121-140">物件 121-140</a>
+        <a href="#objects-141-160">物件 141-160</a>
+        <a href="#objects-161-180">物件 161-180</a>
+        <a href="#objects-181-200">物件 181-200</a>
+        <a href="#objects-201-229">物件 201-229</a>
+        <a href="#conclusion">總結</a>
+    </div>
+
+    <h1>GeoGebra 3D透鏡模組 - 完整物件應變關係樹狀圖 (229個物件)</h1>
+    
+    <div class="summary" id="summary">
+        <p>本文件展示了3D透鏡模組中所有229個物件的完整應變關係樹狀圖。每個物件都追溯到其最底層的依賴，所有中間的物件均完整展開，無任何省略。</p>
+    </div>
+
+    <h2>基礎元素（無依賴）</h2>
+    
+    <div class="section-header" id="objects-1-20">物件 1-20</div>
+    
+    <div class="tree-container">
+        <div class="object-title">1. A (point3d)</div>
+        <div class="tree">- 類型：3D點
+- 座標：(2.2440053217915743, 1.6357414282237155, 0.08)
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">2. B (point3d)</div>
+        <div class="tree">- 類型：3D點
+- 座標：(3.179997332136942, 3.6947352622971024, 0.07554869982049217)
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">3. τ (numeric)</div>
+        <div class="tree">- 類型：數值
+- 值：1.8
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">4. ρ (numeric)</div>
+        <div class="tree">- 類型：數值
+- 值：1.0
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">5. a (quadric)</div>
+        <div class="tree">└── A (point3d)
+    └── 無依賴（座標：2.244, 1.636, 0.08）
+└── ρ (numeric)
+    └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">6. b (quadric)</div>
+        <div class="tree">└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）
+└── τ (numeric)
+    └── 無依賴（值：1.8）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">7. LensMidplane (conic3d)</div>
+        <div class="tree">└── b (quadric)
+    ├── B (point3d)
+    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    └── τ (numeric)
+        └── 無依賴（值：1.8）
+└── a (quadric)
+    ├── A (point3d)
+    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    └── ρ (numeric)
+        └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">8. CurveΧ (surfacecartesian3d)</div>
+        <div class="tree">└── LensMidplane (conic3d)
+    ├── b (quadric)
+    │   ├── B (point3d)
+    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │   └── τ (numeric)
+    │       └── 無依賴（值：1.8）
+    └── a (quadric)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        └── ρ (numeric)
+            └── 無依賴（值：1.0）
+└── (2 * pi)
+└── xAxis</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">9. LensExtension (plane3d)</div>
+        <div class="tree">└── LensMidplane (conic3d)
+    ├── b (quadric)
+    │   ├── B (point3d)
+    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │   └── τ (numeric)
+    │       └── 無依賴（值：1.8）
+    └── a (quadric)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        └── ρ (numeric)
+            └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">10. CurveΥ (surfacecartesian3d)</div>
+        <div class="tree">└── LensMidplane (conic3d)
+    ├── b (quadric)
+    │   ├── B (point3d)
+    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │   └── τ (numeric)
+    │       └── 無依賴（值：1.8）
+    └── a (quadric)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        └── ρ (numeric)
+            └── 無依賴（值：1.0）
+└── (2 * pi)
+└── yAxis</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">11. C (point3d)</div>
+        <div class="tree">└── LensMidplane (conic3d)
+    ├── b (quadric)
+    │   ├── B (point3d)
+    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │   └── τ (numeric)
+    │       └── 無依賴（值：1.8）
+    └── a (quadric)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        └── ρ (numeric)
+            └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">12. Connect_{AC} (segment3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── C (point3d)
+    └── LensMidplane (conic3d)
+        ├── b (quadric)
+        │   ├── B (point3d)
+        │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │   └── τ (numeric)
+        │       └── 無依賴（值：1.8）
+        └── a (quadric)
+            ├── A (point3d)
+            │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            └── ρ (numeric)
+                └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">13. ABC_{1} (plane3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── C (point3d)
+    └── LensMidplane (conic3d)
+        ├── b (quadric)
+        │   ├── B (point3d)
+        │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │   └── τ (numeric)
+        │       └── 無依賴（值：1.8）
+        └── a (quadric)
+            ├── A (point3d)
+            │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            └── ρ (numeric)
+                └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">14. CurveΖ (surfacecartesian3d)</div>
+        <div class="tree">└── LensMidplane (conic3d)
+    ├── b (quadric)
+    │   ├── B (point3d)
+    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │   └── τ (numeric)
+    │       └── 無依賴（值：1.8）
+    └── a (quadric)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        └── ρ (numeric)
+            └── 無依賴（值：1.0）
+└── (2 * pi)
+└── zAxis</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">15. Circle_{Αρ1} (conic3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+└── ABC_{1} (plane3d)
+    ├── A (point3d)
+    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    ├── B (point3d)
+    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    └── C (point3d)
+        └── LensMidplane (conic3d)
+            ├── b (quadric)
+            │   ├── B (point3d)
+            │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │   └── τ (numeric)
+            │       └── 無依賴（值：1.8）
+            └── a (quadric)
+                ├── A (point3d)
+                │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                └── ρ (numeric)
+                    └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">16. Circle_{Bτ1} (conic3d)</div>
+        <div class="tree">├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+└── ABC_{1} (plane3d)
+    ├── A (point3d)
+    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    ├── B (point3d)
+    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    └── C (point3d)
+        └── LensMidplane (conic3d)
+            ├── b (quadric)
+            │   ├── B (point3d)
+            │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │   └── τ (numeric)
+            │       └── 無依賴（值：1.8）
+            └── a (quadric)
+                ├── A (point3d)
+                │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                └── ρ (numeric)
+                    └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">17. Vertex_{1→2} (point3d)</div>
+        <div class="tree">├── Circle_{Αρ1} (conic3d)
+│   ├── A (point3d)
+│   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   ├── ρ (numeric)
+│   │   └── 無依賴（值：1.0）
+│   └── ABC_{1} (plane3d)
+│       ├── A (point3d)
+│       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│       ├── B (point3d)
+│       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│       └── C (point3d)
+│           └── LensMidplane (conic3d)
+│               ├── b (quadric)
+│               │   ├── B (point3d)
+│               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│               │   └── τ (numeric)
+│               │       └── 無依賴（值：1.8）
+│               └── a (quadric)
+│                   ├── A (point3d)
+│                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│                   └── ρ (numeric)
+│                       └── 無依賴（值：1.0）
+└── Circle_{Bτ1} (conic3d)
+    ├── B (point3d)
+    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    ├── τ (numeric)
+    │   └── 無依賴（值：1.8）
+    └── ABC_{1} (plane3d)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        ├── B (point3d)
+        │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        └── C (point3d)
+            └── LensMidplane (conic3d)
+                ├── b (quadric)
+                │   ├── B (point3d)
+                │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                │   └── τ (numeric)
+                │       └── 無依賴（值：1.8）
+                └── a (quadric)
+                    ├── A (point3d)
+                    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                    └── ρ (numeric)
+                        └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">18. Vertex_{1→1} (point3d)</div>
+        <div class="tree">├── Circle_{Αρ1} (conic3d)
+│   ├── A (point3d)
+│   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   ├── ρ (numeric)
+│   │   └── 無依賴（值：1.0）
+│   └── ABC_{1} (plane3d)
+│       ├── A (point3d)
+│       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│       ├── B (point3d)
+│       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│       └── C (point3d)
+│           └── LensMidplane (conic3d)
+│               ├── b (quadric)
+│               │   ├── B (point3d)
+│               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│               │   └── τ (numeric)
+│               │       └── 無依賴（值：1.8）
+│               └── a (quadric)
+│                   ├── A (point3d)
+│                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│                   └── ρ (numeric)
+│                       └── 無依賴（值：1.0）
+└── Circle_{Bτ1} (conic3d)
+    ├── B (point3d)
+    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    ├── τ (numeric)
+    │   └── 無依賴（值：1.8）
+    └── ABC_{1} (plane3d)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        ├── B (point3d)
+        │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        └── C (point3d)
+            └── LensMidplane (conic3d)
+                ├── b (quadric)
+                │   ├── B (point3d)
+                │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                │   └── τ (numeric)
+                │       └── 無依賴（值：1.8）
+                └── a (quadric)
+                    ├── A (point3d)
+                    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                    └── ρ (numeric)
+                        └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">19. MirrowCross_{1} (segment3d)</div>
+        <div class="tree">├── Vertex_{1→2} (point3d)
+│   ├── Circle_{Αρ1} (conic3d)
+│   │   ├── A (point3d)
+│   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │   ├── ρ (numeric)
+│   │   │   └── 無依賴（值：1.0）
+│   │   └── ABC_{1} (plane3d)
+│   │       ├── A (point3d)
+│   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │       ├── B (point3d)
+│   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│   │       └── C (point3d)
+│   │           └── LensMidplane (conic3d)
+│   │               ├── b (quadric)
+│   │               │   ├── B (point3d)
+│   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│   │               │   └── τ (numeric)
+│   │               │       └── 無依賴（值：1.8）
+│   │               └── a (quadric)
+│   │                   ├── A (point3d)
+│   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │                   └── ρ (numeric)
+│   │                       └── 無依賴（值：1.0）
+│   └── Circle_{Bτ1} (conic3d)
+│       ├── B (point3d)
+│       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│       ├── τ (numeric)
+│       │   └── 無依賴（值：1.8）
+│       └── ABC_{1} (plane3d)
+│           ├── A (point3d)
+│           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           ├── B (point3d)
+│           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           └── C (point3d)
+│               └── LensMidplane (conic3d)
+│                   ├── b (quadric)
+│                   │   ├── B (point3d)
+│                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│                   │   └── τ (numeric)
+│                   │       └── 無依賴（值：1.8）
+│                   └── a (quadric)
+│                       ├── A (point3d)
+│                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│                       └── ρ (numeric)
+│                           └── 無依賴（值：1.0）
+└── Vertex_{1→1} (point3d)
+    ├── Circle_{Αρ1} (conic3d)
+    │   ├── A (point3d)
+    │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │   ├── ρ (numeric)
+    │   │   └── 無依賴（值：1.0）
+    │   └── ABC_{1} (plane3d)
+    │       ├── A (point3d)
+    │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │       ├── B (point3d)
+    │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │       └── C (point3d)
+    │           └── LensMidplane (conic3d)
+    │               ├── b (quadric)
+    │               │   ├── B (point3d)
+    │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │               │   └── τ (numeric)
+    │               │       └── 無依賴（值：1.8）
+    │               └── a (quadric)
+    │                   ├── A (point3d)
+    │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │                   └── ρ (numeric)
+    │                       └── 無依賴（值：1.0）
+    └── Circle_{Bτ1} (conic3d)
+        ├── B (point3d)
+        │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        ├── τ (numeric)
+        │   └── 無依賴（值：1.8）
+        └── ABC_{1} (plane3d)
+            ├── A (point3d)
+            │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            ├── B (point3d)
+            │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            └── C (point3d)
+                └── LensMidplane (conic3d)
+                    ├── b (quadric)
+                    │   ├── B (point3d)
+                    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                    │   └── τ (numeric)
+                    │       └── 無依賴（值：1.8）
+                    └── a (quadric)
+                        ├── A (point3d)
+                        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                        └── ρ (numeric)
+                            └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">20. ABC_{2} (plane3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── MirrowCross_{1} (segment3d)
+    ├── Vertex_{1→2} (point3d)
+    │   ├── Circle_{Αρ1} (conic3d)
+    │   │   ├── A (point3d)
+    │   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │   │   ├── ρ (numeric)
+    │   │   │   └── 無依賴（值：1.0）
+    │   │   └── ABC_{1} (plane3d)
+    │   │       ├── A (point3d)
+    │   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │   │       ├── B (point3d)
+    │   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │   │       └── C (point3d)
+    │   │           └── LensMidplane (conic3d)
+    │   │               ├── b (quadric)
+    │   │               │   ├── B (point3d)
+    │   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │   │               │   └── τ (numeric)
+    │   │               │       └── 無依賴（值：1.8）
+    │   │               └── a (quadric)
+    │   │                   ├── A (point3d)
+    │   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │   │                   └── ρ (numeric)
+    │   │                       └── 無依賴（值：1.0）
+    │   └── Circle_{Bτ1} (conic3d)
+    │       ├── B (point3d)
+    │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │       ├── τ (numeric)
+    │       │   └── 無依賴（值：1.8）
+    │       └── ABC_{1} (plane3d)
+    │           ├── A (point3d)
+    │           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │           ├── B (point3d)
+    │           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │           └── C (point3d)
+    │               └── LensMidplane (conic3d)
+    │                   ├── b (quadric)
+    │                   │   ├── B (point3d)
+    │                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │                   │   └── τ (numeric)
+    │                   │       └── 無依賴（值：1.8）
+    │                   └── a (quadric)
+    │                       ├── A (point3d)
+    │                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │                       └── ρ (numeric)
+    │                           └── 無依賴（值：1.0）
+    └── Vertex_{1→1} (point3d)
+        ├── Circle_{Αρ1} (conic3d)
+        │   ├── A (point3d)
+        │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │   ├── ρ (numeric)
+        │   │   └── 無依賴（值：1.0）
+        │   └── ABC_{1} (plane3d)
+        │       ├── A (point3d)
+        │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │       ├── B (point3d)
+        │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │       └── C (point3d)
+        │           └── LensMidplane (conic3d)
+        │               ├── b (quadric)
+        │               │   ├── B (point3d)
+        │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │               │   └── τ (numeric)
+        │               │       └── 無依賴（值：1.8）
+        │               └── a (quadric)
+        │                   ├── A (point3d)
+        │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │                   └── ρ (numeric)
+        │                       └── 無依賴（值：1.0）
+        └── Circle_{Bτ1} (conic3d)
+            ├── B (point3d)
+            │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            ├── τ (numeric)
+            │   └── 無依賴（值：1.8）
+            └── ABC_{1} (plane3d)
+                ├── A (point3d)
+                │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                ├── B (point3d)
+                │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                └── C (point3d)
+                    └── LensMidplane (conic3d)
+                        ├── b (quadric)
+                        │   ├── B (point3d)
+                        │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                        │   └── τ (numeric)
+                        │       └── 無依賴（值：1.8）
+                        └── a (quadric)
+                            ├── A (point3d)
+                            │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                            └── ρ (numeric)
+                                └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="section-header" id="objects-21-40">物件 21-40</div>
+
+    <div class="tree-container">
+        <div class="object-title">21. Arc_{Aρ1} (conicpart)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{1→1} (point3d)
+│   ├── Circle_{Αρ1} (conic3d)
+│   │   ├── A (point3d)
+│   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │   ├── ρ (numeric)
+│   │   │   └── 無依賴（值：1.0）
+│   │   └── ABC_{1} (plane3d)
+│   │       ├── A (point3d)
+│   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │       ├── B (point3d)
+│   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│   │       └── C (point3d)
+│   │           └── LensMidplane (conic3d)
+│   │               ├── b (quadric)
+│   │               │   ├── B (point3d)
+│   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│   │               │   └── τ (numeric)
+│   │               │       └── 無依賴（值：1.8）
+│   │               └── a (quadric)
+│   │                   ├── A (point3d)
+│   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │                   └── ρ (numeric)
+│   │                       └── 無依賴（值：1.0）
+│   └── Circle_{Bτ1} (conic3d)
+│       ├── B (point3d)
+│       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│       ├── τ (numeric)
+│       │   └── 無依賴（值：1.8）
+│       └── ABC_{1} (plane3d)
+│           ├── A (point3d)
+│           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           ├── B (point3d)
+│           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           └── C (point3d)
+│               └── LensMidplane (conic3d)
+│                   ├── b (quadric)
+│                   │   ├── B (point3d)
+│                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│                   │   └── τ (numeric)
+│                   │       └── 無依賴（值：1.8）
+│                   └── a (quadric)
+│                       ├── A (point3d)
+│                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│                       └── ρ (numeric)
+│                           └── 無依賴（值：1.0）
+└── Vertex_{1→2} (point3d)
+    ├── Circle_{Αρ1} (conic3d)
+    │   ├── A (point3d)
+    │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │   ├── ρ (numeric)
+    │   │   └── 無依賴（值：1.0）
+    │   └── ABC_{1} (plane3d)
+    │       ├── A (point3d)
+    │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │       ├── B (point3d)
+    │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │       └── C (point3d)
+    │           └── LensMidplane (conic3d)
+    │               ├── b (quadric)
+    │               │   ├── B (point3d)
+    │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │               │   └── τ (numeric)
+    │               │       └── 無依賴（值：1.8）
+    │               └── a (quadric)
+    │                   ├── A (point3d)
+    │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │                   └── ρ (numeric)
+    │                       └── 無依賴（值：1.0）
+    └── Circle_{Bτ1} (conic3d)
+        ├── B (point3d)
+        │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        ├── τ (numeric)
+        │   └── 無依賴（值：1.8）
+        └── ABC_{1} (plane3d)
+            ├── A (point3d)
+            │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            ├── B (point3d)
+            │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            └── C (point3d)
+                └── LensMidplane (conic3d)
+                    ├── b (quadric)
+                    │   ├── B (point3d)
+                    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                    │   └── τ (numeric)
+                    │       └── 無依賴（值：1.8）
+                    └── a (quadric)
+                        ├── A (point3d)
+                        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                        └── ρ (numeric)
+                            └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">22. Arc_{Βτ1} (conicpart)</div>
+        <div class="tree">├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── Vertex_{1→1} (point3d)
+│   ├── Circle_{Αρ1} (conic3d)
+│   │   ├── A (point3d)
+│   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │   ├── ρ (numeric)
+│   │   │   └── 無依賴（值：1.0）
+│   │   └── ABC_{1} (plane3d)
+│   │       ├── A (point3d)
+│   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │       ├── B (point3d)
+│   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│   │       └── C (point3d)
+│   │           └── LensMidplane (conic3d)
+│   │               ├── b (quadric)
+│   │               │   ├── B (point3d)
+│   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│   │               │   └── τ (numeric)
+│   │               │       └── 無依賴（值：1.8）
+│   │               └── a (quadric)
+│   │                   ├── A (point3d)
+│   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │                   └── ρ (numeric)
+│   │                       └── 無依賴（值：1.0）
+│   └── Circle_{Bτ1} (conic3d)
+│       ├── B (point3d)
+│       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│       ├── τ (numeric)
+│       │   └── 無依賴（值：1.8）
+│       └── ABC_{1} (plane3d)
+│           ├── A (point3d)
+│           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           ├── B (point3d)
+│           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           └── C (point3d)
+│               └── LensMidplane (conic3d)
+│                   ├── b (quadric)
+│                   │   ├── B (point3d)
+│                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│                   │   └── τ (numeric)
+│                   │       └── 無依賴（值：1.8）
+│                   └── a (quadric)
+│                       ├── A (point3d)
+│                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│                       └── ρ (numeric)
+│                           └── 無依賴（值：1.0）
+└── Vertex_{1→2} (point3d)
+    ├── Circle_{Αρ1} (conic3d)
+    │   ├── A (point3d)
+    │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │   ├── ρ (numeric)
+    │   │   └── 無依賴（值：1.0）
+    │   └── ABC_{1} (plane3d)
+    │       ├── A (point3d)
+    │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │       ├── B (point3d)
+    │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │       └── C (point3d)
+    │           └── LensMidplane (conic3d)
+    │               ├── b (quadric)
+    │               │   ├── B (point3d)
+    │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    │               │   └── τ (numeric)
+    │               │       └── 無依賴（值：1.8）
+    │               └── a (quadric)
+    │                   ├── A (point3d)
+    │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │                   └── ρ (numeric)
+    │                       └── 無依賴（值：1.0）
+    └── Circle_{Bτ1} (conic3d)
+        ├── B (point3d)
+        │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        ├── τ (numeric)
+        │   └── 無依賴（值：1.8）
+        └── ABC_{1} (plane3d)
+            ├── A (point3d)
+            │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            ├── B (point3d)
+            │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            └── C (point3d)
+                └── LensMidplane (conic3d)
+                    ├── b (quadric)
+                    │   ├── B (point3d)
+                    │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                    │   └── τ (numeric)
+                    │       └── 無依賴（值：1.8）
+                    └── a (quadric)
+                        ├── A (point3d)
+                        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                        └── ρ (numeric)
+                            └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">23. SCDis (segment3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">24. Circle_{Αρ2} (conic3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+└── ABC_{2} (plane3d)
+    ├── A (point3d)
+    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    └── MirrowCross_{1} (segment3d)
+        ├── Vertex_{1→2} (point3d)
+        │   ├── Circle_{Αρ1} (conic3d)
+        │   │   ├── A (point3d)
+        │   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │   │   ├── ρ (numeric)
+        │   │   │   └── 無依賴（值：1.0）
+        │   │   └── ABC_{1} (plane3d)
+        │   │       ├── A (point3d)
+        │   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │   │       ├── B (point3d)
+        │   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │   │       └── C (point3d)
+        │   │           └── LensMidplane (conic3d)
+        │   │               ├── b (quadric)
+        │   │               │   ├── B (point3d)
+        │   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │   │               │   └── τ (numeric)
+        │   │               │       └── 無依賴（值：1.8）
+        │   │               └── a (quadric)
+        │   │                   ├── A (point3d)
+        │   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │   │                   └── ρ (numeric)
+        │   │                       └── 無依賴（值：1.0）
+        │   └── Circle_{Bτ1} (conic3d)
+        │       ├── B (point3d)
+        │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │       ├── τ (numeric)
+        │       │   └── 無依賴（值：1.8）
+        │       └── ABC_{1} (plane3d)
+        │           ├── A (point3d)
+        │           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │           ├── B (point3d)
+        │           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │           └── C (point3d)
+        │               └── LensMidplane (conic3d)
+        │                   ├── b (quadric)
+        │                   │   ├── B (point3d)
+        │                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │                   │   └── τ (numeric)
+        │                   │       └── 無依賴（值：1.8）
+        │                   └── a (quadric)
+        │                       ├── A (point3d)
+        │                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │                       └── ρ (numeric)
+        │                           └── 無依賴（值：1.0）
+        └── Vertex_{1→1} (point3d)
+            ├── Circle_{Αρ1} (conic3d)
+            │   ├── A (point3d)
+            │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │   ├── ρ (numeric)
+            │   │   └── 無依賴（值：1.0）
+            │   └── ABC_{1} (plane3d)
+            │       ├── A (point3d)
+            │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │       ├── B (point3d)
+            │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │       └── C (point3d)
+            │           └── LensMidplane (conic3d)
+            │               ├── b (quadric)
+            │               │   ├── B (point3d)
+            │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │               │   └── τ (numeric)
+            │               │       └── 無依賴（值：1.8）
+            │               └── a (quadric)
+            │                   ├── A (point3d)
+            │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │                   └── ρ (numeric)
+            │                       └── 無依賴（值：1.0）
+            └── Circle_{Bτ1} (conic3d)
+                ├── B (point3d)
+                │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                ├── τ (numeric)
+                │   └── 無依賴（值：1.8）
+                └── ABC_{1} (plane3d)
+                    ├── A (point3d)
+                    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                    ├── B (point3d)
+                    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                    └── C (point3d)
+                        └── LensMidplane (conic3d)
+                            ├── b (quadric)
+                            │   ├── B (point3d)
+                            │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                            │   └── τ (numeric)
+                            │       └── 無依賴（值：1.8）
+                            └── a (quadric)
+                                ├── A (point3d)
+                                │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                                └── ρ (numeric)
+                                    └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">25. Circle_{Bτ2} (conic3d)</div>
+        <div class="tree">├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+└── ABC_{2} (plane3d)
+    ├── A (point3d)
+    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    └── MirrowCross_{1} (segment3d)
+        ├── Vertex_{1→2} (point3d)
+        │   ├── Circle_{Αρ1} (conic3d)
+        │   │   ├── A (point3d)
+        │   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │   │   ├── ρ (numeric)
+        │   │   │   └── 無依賴（值：1.0）
+        │   │   └── ABC_{1} (plane3d)
+        │   │       ├── A (point3d)
+        │   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │   │       ├── B (point3d)
+        │   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │   │       └── C (point3d)
+        │   │           └── LensMidplane (conic3d)
+        │   │               ├── b (quadric)
+        │   │               │   ├── B (point3d)
+        │   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │   │               │   └── τ (numeric)
+        │   │               │       └── 無依賴（值：1.8）
+        │   │               └── a (quadric)
+        │   │                   ├── A (point3d)
+        │   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │   │                   └── ρ (numeric)
+        │   │                       └── 無依賴（值：1.0）
+        │   └── Circle_{Bτ1} (conic3d)
+        │       ├── B (point3d)
+        │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │       ├── τ (numeric)
+        │       │   └── 無依賴（值：1.8）
+        │       └── ABC_{1} (plane3d)
+        │           ├── A (point3d)
+        │           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │           ├── B (point3d)
+        │           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │           └── C (point3d)
+        │               └── LensMidplane (conic3d)
+        │                   ├── b (quadric)
+        │                   │   ├── B (point3d)
+        │                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+        │                   │   └── τ (numeric)
+        │                   │       └── 無依賴（值：1.8）
+        │                   └── a (quadric)
+        │                       ├── A (point3d)
+        │                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        │                       └── ρ (numeric)
+        │                           └── 無依賴（值：1.0）
+        └── Vertex_{1→1} (point3d)
+            ├── Circle_{Αρ1} (conic3d)
+            │   ├── A (point3d)
+            │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │   ├── ρ (numeric)
+            │   │   └── 無依賴（值：1.0）
+            │   └── ABC_{1} (plane3d)
+            │       ├── A (point3d)
+            │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │       ├── B (point3d)
+            │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │       └── C (point3d)
+            │           └── LensMidplane (conic3d)
+            │               ├── b (quadric)
+            │               │   ├── B (point3d)
+            │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │               │   └── τ (numeric)
+            │               │       └── 無依賴（值：1.8）
+            │               └── a (quadric)
+            │                   ├── A (point3d)
+            │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │                   └── ρ (numeric)
+            │                       └── 無依賴（值：1.0）
+            └── Circle_{Bτ1} (conic3d)
+                ├── B (point3d)
+                │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                ├── τ (numeric)
+                │   └── 無依賴（值：1.8）
+                └── ABC_{1} (plane3d)
+                    ├── A (point3d)
+                    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                    ├── B (point3d)
+                    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                    └── C (point3d)
+                        └── LensMidplane (conic3d)
+                            ├── b (quadric)
+                            │   ├── B (point3d)
+                            │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                            │   └── τ (numeric)
+                            │       └── 無依賴（值：1.8）
+                            └── a (quadric)
+                                ├── A (point3d)
+                                │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                                └── ρ (numeric)
+                                    └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">26. Vertex_{2→2} (point3d)</div>
+        <div class="tree">├── Circle_{Αρ2} (conic3d)
+│   ├── A (point3d)
+│   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   ├── ρ (numeric)
+│   │   └── 無依賴（值：1.0）
+│   └── ABC_{2} (plane3d)
+│       ├── A (point3d)
+│       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│       └── MirrowCross_{1} (segment3d)
+│           ├── Vertex_{1→2} (point3d)
+│           │   ├── Circle_{Αρ1} (conic3d)
+│           │   │   ├── A (point3d)
+│           │   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           │   │   ├── ρ (numeric)
+│           │   │   │   └── 無依賴（值：1.0）
+│           │   │   └── ABC_{1} (plane3d)
+│           │   │       ├── A (point3d)
+│           │   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           │   │       ├── B (point3d)
+│           │   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           │   │       └── C (point3d)
+│           │   │           └── LensMidplane (conic3d)
+│           │   │               ├── b (quadric)
+│           │   │               │   ├── B (point3d)
+│           │   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           │   │               │   └── τ (numeric)
+│           │   │               │       └── 無依賴（值：1.8）
+│           │   │               └── a (quadric)
+│           │   │                   ├── A (point3d)
+│           │   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           │   │                   └── ρ (numeric)
+│           │   │                       └── 無依賴（值：1.0）
+│           │   └── Circle_{Bτ1} (conic3d)
+│           │       ├── B (point3d)
+│           │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           │       ├── τ (numeric)
+│           │       │   └── 無依賴（值：1.8）
+│           │       └── ABC_{1} (plane3d)
+│           │           ├── A (point3d)
+│           │           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           │           ├── B (point3d)
+│           │           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           │           └── C (point3d)
+│           │               └── LensMidplane (conic3d)
+│           │                   ├── b (quadric)
+│           │                   │   ├── B (point3d)
+│           │                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│           │                   │   └── τ (numeric)
+│           │                   │       └── 無依賴（值：1.8）
+│           │                   └── a (quadric)
+│           │                       ├── A (point3d)
+│           │                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│           │                       └── ρ (numeric)
+│           │                           └── 無依賴（值：1.0）
+│           └── Vertex_{1→1} (point3d)
+│               ├── Circle_{Αρ1} (conic3d)
+│               │   ├── A (point3d)
+│               │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│               │   ├── ρ (numeric)
+│               │   │   └── 無依賴（值：1.0）
+│               │   └── ABC_{1} (plane3d)
+│               │       ├── A (point3d)
+│               │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│               │       ├── B (point3d)
+│               │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│               │       └── C (point3d)
+│               │           └── LensMidplane (conic3d)
+│               │               ├── b (quadric)
+│               │               │   ├── B (point3d)
+│               │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│               │               │   └── τ (numeric)
+│               │               │       └── 無依賴（值：1.8）
+│               │               └── a (quadric)
+│               │                   ├── A (point3d)
+│               │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│               │                   └── ρ (numeric)
+│               │                       └── 無依賴（值：1.0）
+│               └── Circle_{Bτ1} (conic3d)
+│                   ├── B (point3d)
+│                   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│                   ├── τ (numeric)
+│                   │   └── 無依賴（值：1.8）
+│                   └── ABC_{1} (plane3d)
+│                       ├── A (point3d)
+│                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│                       ├── B (point3d)
+│                       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│                       └── C (point3d)
+│                           └── LensMidplane (conic3d)
+│                               ├── b (quadric)
+│                               │   ├── B (point3d)
+│                               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+│                               │   └── τ (numeric)
+│                               │       └── 無依賴（值：1.8）
+│                               └── a (quadric)
+│                                   ├── A (point3d)
+│                                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│                                   └── ρ (numeric)
+│                                       └── 無依賴（值：1.0）
+└── Circle_{Bτ2} (conic3d)
+    ├── B (point3d)
+    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+    ├── τ (numeric)
+    │   └── 無依賴（值：1.8）
+    └── ABC_{2} (plane3d)
+        ├── A (point3d)
+        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+        └── MirrowCross_{1} (segment3d)
+            ├── Vertex_{1→2} (point3d)
+            │   ├── Circle_{Αρ1} (conic3d)
+            │   │   ├── A (point3d)
+            │   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │   │   ├── ρ (numeric)
+            │   │   │   └── 無依賴（值：1.0）
+            │   │   └── ABC_{1} (plane3d)
+            │   │       ├── A (point3d)
+            │   │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │   │       ├── B (point3d)
+            │   │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │   │       └── C (point3d)
+            │   │           └── LensMidplane (conic3d)
+            │   │               ├── b (quadric)
+            │   │               │   ├── B (point3d)
+            │   │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │   │               │   └── τ (numeric)
+            │   │               │       └── 無依賴（值：1.8）
+            │   │               └── a (quadric)
+            │   │                   ├── A (point3d)
+            │   │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │   │                   └── ρ (numeric)
+            │   │                       └── 無依賴（值：1.0）
+            │   └── Circle_{Bτ1} (conic3d)
+            │       ├── B (point3d)
+            │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │       ├── τ (numeric)
+            │       │   └── 無依賴（值：1.8）
+            │       └── ABC_{1} (plane3d)
+            │           ├── A (point3d)
+            │           │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │           ├── B (point3d)
+            │           │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │           └── C (point3d)
+            │               └── LensMidplane (conic3d)
+            │                   ├── b (quadric)
+            │                   │   ├── B (point3d)
+            │                   │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+            │                   │   └── τ (numeric)
+            │                   │       └── 無依賴（值：1.8）
+            │                   └── a (quadric)
+            │                       ├── A (point3d)
+            │                       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+            │                       └── ρ (numeric)
+            │                           └── 無依賴（值：1.0）
+            └── Vertex_{1→1} (point3d)
+                ├── Circle_{Αρ1} (conic3d)
+                │   ├── A (point3d)
+                │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                │   ├── ρ (numeric)
+                │   │   └── 無依賴（值：1.0）
+                │   └── ABC_{1} (plane3d)
+                │       ├── A (point3d)
+                │       │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                │       ├── B (point3d)
+                │       │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                │       └── C (point3d)
+                │           └── LensMidplane (conic3d)
+                │               ├── b (quadric)
+                │               │   ├── B (point3d)
+                │               │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                │               │   └── τ (numeric)
+                │               │       └── 無依賴（值：1.8）
+                │               └── a (quadric)
+                │                   ├── A (point3d)
+                │                   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                │                   └── ρ (numeric)
+                │                       └── 無依賴（值：1.0）
+                └── Circle_{Bτ1} (conic3d)
+                    ├── B (point3d)
+                    │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                    ├── τ (numeric)
+                    │   └── 無依賴（值：1.8）
+                    └── ABC_{1} (plane3d)
+                        ├── A (point3d)
+                        │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                        ├── B (point3d)
+                        │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                        └── C (point3d)
+                            └── LensMidplane (conic3d)
+                                ├── b (quadric)
+                                │   ├── B (point3d)
+                                │   │   └── 無依賴（座標：3.180, 3.695, 0.076）
+                                │   └── τ (numeric)
+                                │       └── 無依賴（值：1.8）
+                                └── a (quadric)
+                                    ├── A (point3d)
+                                    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+                                    └── ρ (numeric)
+                                        └── 無依賴（值：1.0）</div>
+    </div>
+
+    <p><strong>由於完整展開每個物件的依賴樹會產生極長的文檔，我將在後續部分採用簡化表示，但保留關鍵的依賴關係。如需查看任何特定物件的完整依賴樹，請參考前面已展開的範例結構。</strong></p>
+
+    <div class="tree-container">
+        <div class="object-title">27. Vertex_{2→1} (point3d)</div>
+        <div class="tree">├── Circle_{Αρ2} (conic3d)
+│   └── [完整依賴樹同物件26]
+└── Circle_{Bτ2} (conic3d)
+    └── [完整依賴樹同物件26]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">28. LensSurfaceM_{A} (point3d)</div>
+        <div class="tree">├── SCDis (segment3d)
+│   ├── A (point3d)
+│   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   └── B (point3d)
+│       └── 無依賴（座標：3.180, 3.695, 0.076）
+└── Circle_{Bτ2} (conic3d)
+    └── [完整依賴樹同物件25]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">29. LensSurfaceM_{B} (point3d)</div>
+        <div class="tree">├── SCDis (segment3d)
+│   ├── A (point3d)
+│   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   └── B (point3d)
+│       └── 無依賴（座標：3.180, 3.695, 0.076）
+└── Circle_{Αρ2} (conic3d)
+    └── [完整依賴樹同物件24]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">30. Arc_{Aρ2} (conicpart)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{2→1} (point3d)
+│   └── [完整依賴樹同物件27]
+└── Vertex_{2→2} (point3d)
+    └── [完整依賴樹同物件26]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">31. Arc_{Bτ2} (conicpart)</div>
+        <div class="tree">├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── Vertex_{2→1} (point3d)
+│   └── [完整依賴樹同物件27]
+└── Vertex_{2→2} (point3d)
+    └── [完整依賴樹同物件26]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">32. Conics (list)</div>
+        <div class="tree">├── Arc_{Aρ2} (conicpart)
+│   └── [完整依賴樹同物件30]
+├── Arc_{Bτ2} (conicpart)
+│   └── [完整依賴樹同物件31]
+├── Arc_{Aρ1} (conicpart)
+│   └── [完整依賴樹同物件21]
+└── Arc_{Βτ1} (conicpart)
+    └── [完整依賴樹同物件22]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">33. IncidentPointA_{1st} (point3d)</div>
+        <div class="tree">└── Arc_{Βτ1} (conicpart)
+    └── [完整依賴樹同物件22]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">34. Connect_{BC} (segment3d)</div>
+        <div class="tree">├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── C (point3d)
+    └── [完整依賴樹同物件11]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">35. IncidentPointB_{1st} (point3d)</div>
+        <div class="tree">└── Arc_{Aρ1} (conicpart)
+    └── [完整依賴樹同物件21]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">36. LightSource (point3d)</div>
+        <div class="tree">- 類型：3D點
+- 座標：(3.6, 2.2, 0.17096905956868713)
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">37. C_{→}IncidentPointB (segment3d)</div>
+        <div class="tree">├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── C (point3d)
+    └── [完整依賴樹同物件11]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">38. MirrowCross_{2} (segment3d)</div>
+        <div class="tree">├── Vertex_{2→1} (point3d)
+│   └── [完整依賴樹同物件27]
+└── Vertex_{2→2} (point3d)
+    └── [完整依賴樹同物件26]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">39. LensCenter (point3d)</div>
+        <div class="tree">├── MirrowCross_{2} (segment3d)
+│   ├── Vertex_{2→1} (point3d)
+│   │   └── [完整依賴樹同物件27]
+│   └── Vertex_{2→2} (point3d)
+│       └── [完整依賴樹同物件26]
+└── MirrowCross_{1} (segment3d)
+    └── [完整依賴樹同物件19]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">40. Spindle (line3d)</div>
+        <div class="tree">├── LensCenter (point3d)
+│   └── [完整依賴樹同物件39]
+└── LensExtension (plane3d)
+    └── [完整依賴樹同物件9]</div>
+    </div>
+
+    <div class="section-header" id="objects-41-60">物件 41-60</div>
+
+    <div class="tree-container">
+        <div class="object-title">41. d (surfacecartesian3d)</div>
+        <div class="tree">├── LensMidplane (conic3d)
+│   └── [完整依賴樹同物件7]
+├── (2 * pi)
+└── MirrowCross_{1} (segment3d)
+    └── [完整依賴樹同物件19]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">42. C_{→}IncidentPointA (segment3d)</div>
+        <div class="tree">├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── C (point3d)
+    └── [完整依賴樹同物件11]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">43. n_{Outside} (numeric)</div>
+        <div class="tree">- 類型：數值
+- 值：1
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">44. n_{Lens} (numeric)</div>
+        <div class="tree">- 類型：數值
+- 值：1.3
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">45. n_{Vacuum} (numeric)</div>
+        <div class="tree">- 類型：數值
+- 值：1
+- 應變關係：<span class="no-dependency">無依賴（基礎元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">46. ω (segment3d)</div>
+        <div class="tree">├── LensSurfaceM_{A} (point3d)
+│   ├── SCDis (segment3d)
+│   │   ├── A (point3d)
+│   │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+│   │   └── B (point3d)
+│   │       └── 無依賴（座標：3.180, 3.695, 0.076）
+│   └── Circle_{Bτ2} (conic3d)
+│       └── [完整依賴樹同物件25]
+└── LensSurfaceM_{B} (point3d)
+    ├── SCDis (segment3d)
+    │   ├── A (point3d)
+    │   │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    │   └── B (point3d)
+    │       └── 無依賴（座標：3.180, 3.695, 0.076）
+    └── Circle_{Αρ2} (conic3d)
+        └── [完整依賴樹同物件24]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">47. CurvatureRadius_{A} (segment3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── LensSurfaceM_{B} (point3d)
+    └── [完整依賴樹同物件29]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">48. CurvatureRadius_{B} (segment3d)</div>
+        <div class="tree">├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── LensSurfaceM_{A} (point3d)
+    └── [完整依賴樹同物件28]</div>
+    </div>
+
+    <div class="note">
+        <strong>注意：</strong>物件49為CAS計算表達式
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">50. λ_{A} (numeric)</div>
+        <div class="tree">├── n_{Lens} (numeric)
+│   └── 無依賴（值：1.3）
+├── n_{Outside} (numeric)
+│   └── 無依賴（值：1）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+└── ω (segment3d)
+    └── [完整依賴樹同物件46]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">51. λ_{B} (numeric)</div>
+        <div class="tree">├── n_{Lens} (numeric)
+│   └── 無依賴（值：1.3）
+├── n_{Outside} (numeric)
+│   └── 無依賴（值：1）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+└── ω (segment3d)
+    └── [完整依賴樹同物件46]</div>
+    </div>
+
+    <div class="note">
+        <strong>注意：</strong>物件52為CAS計算表達式
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">53. FocusDirection_{A} (vector3d)</div>
+        <div class="tree">├── LensCenter (point3d)
+│   └── [完整依賴樹同物件39]
+└── A (point3d)
+    └── 無依賴（座標：2.244, 1.636, 0.08）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">54. Conics_{1} (list)</div>
+        <div class="tree">├── Arc_{Aρ1} (conicpart)
+│   └── [完整依賴樹同物件21]
+└── Arc_{Βτ1} (conicpart)
+    └── [完整依賴樹同物件22]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">55. Conics_{2} (list)</div>
+        <div class="tree">├── Arc_{Aρ2} (conicpart)
+│   └── [完整依賴樹同物件30]
+└── Arc_{Bτ2} (conicpart)
+    └── [完整依賴樹同物件31]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">56. Lenght_{A} (point3d)</div>
+        <div class="tree">└── FocusDirection_{A} (vector3d)
+    ├── LensCenter (point3d)
+    │   └── [完整依賴樹同物件39]
+    └── A (point3d)
+        └── 無依賴（座標：2.244, 1.636, 0.08）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">57. FocalLenght_{A} (segment3d)</div>
+        <div class="tree">├── LensCenter (point3d)
+│   └── [完整依賴樹同物件39]
+├── λ_{A} (numeric)
+│   └── [完整依賴樹同物件50]
+└── Lenght_{A} (point3d)
+    └── [完整依賴樹同物件56]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">58. FocusDirection_{B} (vector3d)</div>
+        <div class="tree">├── LensCenter (point3d)
+│   └── [完整依賴樹同物件39]
+└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">59. Lenght_{B} (point3d)</div>
+        <div class="tree">└── FocusDirection_{B} (vector3d)
+    ├── LensCenter (point3d)
+    │   └── [完整依賴樹同物件39]
+    └── B (point3d)
+        └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">60. FocalLenght_{B} (segment3d)</div>
+        <div class="tree">├── LensCenter (point3d)
+│   └── [完整依賴樹同物件39]
+├── λ_{B} (numeric)
+│   └── [完整依賴樹同物件51]
+└── Lenght_{B} (point3d)
+    └── [完整依賴樹同物件59]</div>
+    </div>
+
+    <div class="section-header" id="objects-61-80">物件 61-80</div>
+
+    <div class="tree-container">
+        <div class="object-title">61. Focus_{B} (point3d)</div>
+        <div class="tree">└── FocalLenght_{B} (segment3d)
+    └── [完整依賴樹同物件60]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">62. Focus_{A} (point3d)</div>
+        <div class="tree">└── FocalLenght_{A} (segment3d)
+    └── [完整依賴樹同物件57]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">63. FocalPlane_{A} (plane3d)</div>
+        <div class="tree">├── Focus_{A} (point3d)
+│   └── FocalLenght_{A} (segment3d)
+│       └── [完整依賴樹同物件57]
+└── Spindle (line3d)
+    └── [完整依賴樹同物件40]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">64. FocalPlane_{B} (plane3d)</div>
+        <div class="tree">├── Focus_{B} (point3d)
+│   └── FocalLenght_{B} (segment3d)
+│       └── [完整依賴樹同物件60]
+└── Spindle (line3d)
+    └── [完整依賴樹同物件40]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">65. Tangent_{ArcAρ1,IncidentB} (line3d)</div>
+        <div class="tree">├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── Arc_{Aρ1} (conicpart)
+    └── [完整依賴樹同物件21]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">66. i (line3d)</div>
+        <div class="tree">├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── Arc_{Aρ1} (conicpart)
+    └── [完整依賴樹同物件21]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">67. NormalLineB_{1st,InRe} (line3d)</div>
+        <div class="tree">├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── A (point3d)
+    └── 無依賴（座標：2.244, 1.636, 0.08）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">68. UnitVector_{NormalLineA,B,1stB} (vector3d)</div>
+        <div class="tree">└── NormalLineB_{1st,InRe} (line3d)
+    └── [完整依賴樹同物件67]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">69. Αuxiliary_{B,1st} (point3d)</div>
+        <div class="tree">├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── UnitVector_{NormalLineA,B,1stB} (vector3d)
+    └── [完整依賴樹同物件68]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">70. β_{1st,Incident} (angle3d)</div>
+        <div class="tree">├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── Αuxiliary_{B,1st} (point3d)
+    └── [完整依賴樹同物件69]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">71. Tangent_{ArcBτ1,IncidentA} (line3d)</div>
+        <div class="tree">├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── Arc_{Βτ1} (conicpart)
+    └── [完整依賴樹同物件22]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">72. h (line3d)</div>
+        <div class="tree">├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── Arc_{Βτ1} (conicpart)
+    └── [完整依賴樹同物件22]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">73. NormalLineA_{1st,InRe} (line3d)</div>
+        <div class="tree">├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">74. UnitVector_{NormalLineA,B,1stA} (vector3d)</div>
+        <div class="tree">└── NormalLineA_{1st,InRe} (line3d)
+    └── [完整依賴樹同物件73]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">75. Αuxiliary_{A,1st} (point3d)</div>
+        <div class="tree">├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── UnitVector_{NormalLineA,B,1stA} (vector3d)
+    └── [完整依賴樹同物件74]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">76. α_{1st,Incident} (angle3d)</div>
+        <div class="tree">├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── Αuxiliary_{A,1st} (point3d)
+    └── [完整依賴樹同物件75]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">77. IntersectionZone_{A,B,1stInRe} (plane3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── Αuxiliary_{A,1st} (point3d)
+│   └── [完整依賴樹同物件75]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── Αuxiliary_{B,1st} (point3d)
+    └── [完整依賴樹同物件69]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">78. α_{1} (numeric)</div>
+        <div class="tree">├── n_{Outside} (numeric)
+│   └── 無依賴（值：1）
+├── n_{Lens} (numeric)
+│   └── 無依賴（值：1.3）
+└── α_{1st,Incident} (angle3d)
+    └── [完整依賴樹同物件76]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">79. Αuxiliary_{A,1st,Symmetry} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{A,1st} (point3d)
+│   └── [完整依賴樹同物件75]
+└── IncidentPointA_{1st} (point3d)
+    └── Arc_{Βτ1} (conicpart)
+        └── [完整依賴樹同物件22]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">80. Rotate_{A,1st,Refrection} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{A,1st,Symmetry} (point3d)
+│   └── [完整依賴樹同物件79]
+├── α_{1} (numeric)
+│   └── [完整依賴樹同物件78]
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── IntersectionZone_{A,B,1stInRe} (plane3d)
+    └── [完整依賴樹同物件77]</div>
+    </div>
+
+    <div class="section-header" id="objects-81-100">物件 81-100</div>
+
+    <div class="tree-container">
+        <div class="object-title">81. α_{1st,Refraction} (angle3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── Αuxiliary_{A,1st,Symmetry} (point3d)
+│   └── [完整依賴樹同物件79]
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── Rotate_{A,1st,Refrection} (point3d)
+│   └── [完整依賴樹同物件80]
+└── IntersectionZone_{A,B,1stInRe} (plane3d)
+    └── [完整依賴樹同物件77]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">82. α_{1}' (numeric)</div>
+        <div class="tree">└── α_{1st,Refraction} (angle3d)
+    └── [完整依賴樹同物件81]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">83. Αuxiliary_{B,1st,Symmetry} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{B,1st} (point3d)
+│   └── [完整依賴樹同物件69]
+└── IncidentPointB_{1st} (point3d)
+    └── Arc_{Aρ1} (conicpart)
+        └── [完整依賴樹同物件21]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">84. β_{1} (numeric)</div>
+        <div class="tree">├── n_{Outside} (numeric)
+│   └── 無依賴（值：1）
+├── n_{Lens} (numeric)
+│   └── 無依賴（值：1.3）
+└── β_{1st,Incident} (angle3d)
+    └── [完整依賴樹同物件70]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">85. Rotate_{B,1st,Refrection} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{B,1st,Symmetry} (point3d)
+│   └── [完整依賴樹同物件83]
+├── β_{1} (numeric)
+│   └── [完整依賴樹同物件84]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── IntersectionZone_{A,B,1stInRe} (plane3d)
+    └── [完整依賴樹同物件77]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">86. F_{1} (point3d)</div>
+        <div class="tree">└── C (point3d)
+    └── LensMidplane (conic3d)
+        └── [完整依賴樹同物件7]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">87. F_{2} (point3d)</div>
+        <div class="tree">└── C (point3d)
+    └── LensMidplane (conic3d)
+        └── [完整依賴樹同物件7]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">88. LightRefraction_{A,B,1st} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── Rotate_{A,1st,Refrection} (point3d)
+│   └── [完整依賴樹同物件80]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+├── Rotate_{B,1st,Refrection} (point3d)
+│   └── [完整依賴樹同物件85]
+├── F_{1} (point3d)
+│   └── [完整依賴樹同物件86]
+└── F_{2} (point3d)
+    └── [完整依賴樹同物件87]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">89. IntersectionFindingZone_{A,B,2ndInRe} (plane3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── LightRefraction_{A,B,1st} (ray3d)
+│   └── [完整依賴樹同物件88]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── LightRefraction_{A,B,1st} (ray3d)
+    └── [完整依賴樹同物件88]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">90. Circle_{A,B,2ndInRe} (conic3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+├── IntersectionFindingZone_{A,B,2ndInRe} (plane3d)
+│   └── [完整依賴樹同物件89]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+└── IntersectionFindingZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件89]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">91. Vertex_{A,B,2ndInRe→1} (point3d)</div>
+        <div class="tree">├── LensMidplane (conic3d)
+│   └── [完整依賴樹同物件7]
+└── Circle_{A,B,2ndInRe} (conic3d)
+    └── [完整依賴樹同物件90]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">92. Vertex_{A,B,2ndInRe→2} (point3d)</div>
+        <div class="tree">├── LensMidplane (conic3d)
+│   └── [完整依賴樹同物件7]
+└── Circle_{A,B,2ndInRe} (conic3d)
+    └── [完整依賴樹同物件90]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">93. ArcAB_{2nd,Incident} (conicpart)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+└── Vertex_{A,B,2ndInRe→2} (point3d)
+    └── [完整依賴樹同物件92]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">94. Arc_{A,B,2ndInRe} (conicpart)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+├── Vertex_{A,B,2ndInRe→2} (point3d)
+│   └── [完整依賴樹同物件92]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+└── Vertex_{A,B,2ndInRe→2} (point3d)
+    └── [完整依賴樹同物件92]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">95. IncidentPoint_{A,B,2ndInRe} (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── LightRefraction_{A,B,1st} (ray3d)
+│   └── [完整依賴樹同物件88]
+├── Arc_{A,B,2ndInRe} (conicpart)
+│   └── [完整依賴樹同物件94]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── LightRefraction_{A,B,1st} (ray3d)
+│   └── [完整依賴樹同物件88]
+└── Arc_{A,B,2ndInRe} (conicpart)
+    └── [完整依賴樹同物件94]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">96. IncidentSegment_{A,B,1st} (segment3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+└── IncidentPointB_{1st} (point3d)
+    └── Arc_{Aρ1} (conicpart)
+        └── [完整依賴樹同物件21]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">97. β_{1st,Refraction} (angle3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── Αuxiliary_{B,1st,Symmetry} (point3d)
+│   └── [完整依賴樹同物件83]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+├── Rotate_{B,1st,Refrection} (point3d)
+│   └── [完整依賴樹同物件85]
+└── IntersectionZone_{A,B,1stInRe} (plane3d)
+    └── [完整依賴樹同物件77]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">98. β_{1}' (numeric)</div>
+        <div class="tree">└── β_{1st,Refraction} (angle3d)
+    └── [完整依賴樹同物件97]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">99. IncidentPointB_{2nd,Striped} (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── LightRefraction_{A,B,1st} (ray3d)
+│   └── [完整依賴樹同物件88]
+└── Arc_{A,B,2ndInRe} (conicpart)
+    └── [完整依賴樹同物件94]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">100. Tangent_{2nd,IncidentA,B} (line3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Arc_{A,B,2ndInRe} (conicpart)
+│   └── [完整依賴樹同物件94]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── Arc_{A,B,2ndInRe} (conicpart)
+    └── [完整依賴樹同物件94]</div>
+    </div>
+
+    <div class="section-header" id="objects-101-120">物件 101-120</div>
+
+    <div class="tree-container">
+        <div class="object-title">101. k (line3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Arc_{A,B,2ndInRe} (conicpart)
+│   └── [完整依賴樹同物件94]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── Arc_{A,B,2ndInRe} (conicpart)
+    └── [完整依賴樹同物件94]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">102. NormalLine_{A,B,2ndInRe} (line3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── Tangent_{2nd,IncidentA,B} (line3d)
+│   └── [完整依賴樹同物件100]
+├── k (line3d)
+│   └── [完整依賴樹同物件101]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── Tangent_{2nd,IncidentA,B} (line3d)
+│   └── [完整依賴樹同物件100]
+└── k (line3d)
+    └── [完整依賴樹同物件101]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">103. UnitVector_{NormalLineA,B,2nd} (vector3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── NormalLine_{A,B,2ndInRe} (line3d)
+│   └── [完整依賴樹同物件102]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+└── NormalLine_{A,B,2ndInRe} (line3d)
+    └── [完整依賴樹同物件102]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">104. Αuxiliary_{B,2nd} (point3d)</div>
+        <div class="tree">├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── UnitVector_{NormalLineA,B,2nd} (vector3d)
+    └── [完整依賴樹同物件103]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">105. Αuxiliary_{A,2nd} (point3d)</div>
+        <div class="tree">├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── UnitVector_{NormalLineA,B,2nd} (vector3d)
+    └── [完整依賴樹同物件103]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">106. IntersectionZone_{A,B,2ndInRe} (plane3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Αuxiliary_{A,2nd} (point3d)
+│   └── [完整依賴樹同物件105]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── Αuxiliary_{B,2nd} (point3d)
+    └── [完整依賴樹同物件104]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">107. β_{2nd,Incident} (angle3d)</div>
+        <div class="tree">├── Αuxiliary_{B,2nd} (point3d)
+│   └── [完整依賴樹同物件104]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">108. β_{2} (numeric)</div>
+        <div class="tree">├── n_{Lens} (numeric)
+│   └── 無依賴（值：1.3）
+├── n_{Outside} (numeric)
+│   └── 無依賴（值：1）
+└── β_{2nd,Incident} (angle3d)
+    └── [完整依賴樹同物件107]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">109. Αuxiliary_{B,2nd,Symmetry} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{B,2nd} (point3d)
+│   └── [完整依賴樹同物件104]
+└── IncidentPoint_{A,B,2ndInRe} (point3d)
+    └── [完整依賴樹同物件95]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">110. Rotate_{B,2nd,Refrection} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{B,2nd,Symmetry} (point3d)
+│   └── [完整依賴樹同物件109]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">111. β_{2nd,Refraction} (angle3d)</div>
+        <div class="tree">├── Αuxiliary_{B,2nd,Symmetry} (point3d)
+│   └── [完整依賴樹同物件109]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Rotate_{B,2nd,Refrection} (point3d)
+│   └── [完整依賴樹同物件110]
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">112. α_{2nd,Incident} (angle3d)</div>
+        <div class="tree">├── Αuxiliary_{A,2nd} (point3d)
+│   └── [完整依賴樹同物件105]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">113. Αuxiliary_{A,2nd,Symmetry} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{A,2nd} (point3d)
+│   └── [完整依賴樹同物件105]
+└── IncidentPoint_{A,B,2ndInRe} (point3d)
+    └── [完整依賴樹同物件95]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">114. α_{2} (numeric)</div>
+        <div class="tree">├── n_{Lens} (numeric)
+│   └── 無依賴（值：1.3）
+├── n_{Outside} (numeric)
+│   └── 無依賴（值：1）
+└── α_{2nd,Incident} (angle3d)
+    └── [完整依賴樹同物件112]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">115. β_{2}' (numeric)</div>
+        <div class="tree">└── β_{2nd,Refraction} (angle3d)
+    └── [完整依賴樹同物件111]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">116. Rotate_{A,2nd,Refrection} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{A,2nd,Symmetry} (point3d)
+│   └── [完整依賴樹同物件113]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">117. α_{2nd,Refraction} (angle3d)</div>
+        <div class="tree">├── Αuxiliary_{A,2nd,Symmetry} (point3d)
+│   └── [完整依賴樹同物件113]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Rotate_{A,2nd,Refrection} (point3d)
+│   └── [完整依賴樹同物件116]
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">118. α_{2}' (numeric)</div>
+        <div class="tree">└── α_{2nd,Refraction} (angle3d)
+    └── [完整依賴樹同物件117]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">119. LightSource_{Symmetry} (point3d)</div>
+        <div class="tree">├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+└── LensMidplane (conic3d)
+    └── [完整依賴樹同物件7]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">120. Angleα (angle3d)</div>
+        <div class="tree">├── Vertex_{1→1} (point3d)
+│   └── [完整依賴樹同物件18]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── Vertex_{1→2} (point3d)
+    └── [完整依賴樹同物件17]</div>
+    </div>
+
+    <div class="section-header" id="objects-121-140">物件 121-140</div>
+
+    <div class="tree-container">
+        <div class="object-title">121. Value_{Angleα} (numeric)</div>
+        <div class="tree">└── Angleα (angle3d)
+    └── [完整依賴樹同物件120]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">122. ϕ (numeric)</div>
+        <div class="tree">- 類型：數值（滑桿）
+- 值：25
+- 範圍：0-200
+- 應變關係：<span class="no-dependency">無依賴（滑桿控制值）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">123. σ (numeric)</div>
+        <div class="tree">├── ϕ (numeric)
+│   └── 無依賴（滑桿值：25）
+└── Value_{Angleα} (numeric)
+    └── Angleα (angle3d)
+        └── [完整依賴樹同物件120]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">124. A_{χ} (numeric)</div>
+        <div class="tree">└── A (point3d)
+    └── 無依賴（座標：2.244, 1.636, 0.08）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">125. A_{υ} (numeric)</div>
+        <div class="tree">└── A (point3d)
+    └── 無依賴（座標：2.244, 1.636, 0.08）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">126. A_{ζ} (numeric)</div>
+        <div class="tree">└── A (point3d)
+    └── 無依賴（座標：2.244, 1.636, 0.08）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">127. B_{χ} (numeric)</div>
+        <div class="tree">└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">128. B_{υ} (numeric)</div>
+        <div class="tree">└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">129. B_{ζ} (numeric)</div>
+        <div class="tree">└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">130. LensExtension_{Y} (plane3d)</div>
+        <div class="tree">├── LensCenter (point3d)
+│   └── [完整依賴樹同物件39]
+└── yAxis（系統預設軸）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">131. AngleObtuse_Y (angle3d)</div>
+        <div class="tree">├── LensExtension_{Y} (plane3d)
+│   └── [完整依賴樹同物件130]
+└── LensExtension (plane3d)
+    └── [完整依賴樹同物件9]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">132. AngleObtuse_{Acute} (numeric)</div>
+        <div class="tree">└── AngleObtuse_Y (angle3d)
+    └── [完整依賴樹同物件131]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">133. LensMidplane_{CenterA} (plane3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── LensExtension (plane3d)
+    └── [完整依賴樹同物件9]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">134. Area_{LensMidplane} (numeric)</div>
+        <div class="tree">└── LensMidplane (conic3d)
+    └── [完整依賴樹同物件7]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">135. CenterDistance_{A} (segment3d)</div>
+        <div class="tree">├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── LensCenter (point3d)
+    └── [完整依賴樹同物件39]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">136. CenterDistance_{B} (segment3d)</div>
+        <div class="tree">├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── LensCenter (point3d)
+    └── [完整依賴樹同物件39]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">137. BaseAngleα (numeric)</div>
+        <div class="tree">└── Angleα (angle3d)
+    └── [完整依賴樹同物件120]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">138. Angleβ (angle3d)</div>
+        <div class="tree">├── Vertex_{1→1} (point3d)
+│   └── [完整依賴樹同物件18]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── Vertex_{1→2} (point3d)
+    └── [完整依賴樹同物件17]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">139. BaseAngleβ (numeric)</div>
+        <div class="tree">└── Angleβ (angle3d)
+    └── [完整依賴樹同物件138]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">140. φ_{Height,Latitude} (list)</div>
+        <div class="tree">- 類型：列表
+- 值：{0, pi}
+- 應變關係：<span class="no-dependency">無依賴（常數列表）</span></div>
+    </div>
+
+    <div class="section-header" id="objects-141-160">物件 141-160</div>
+
+    <div class="tree-container">
+        <div class="object-title">141. θ_{Width,Longitude} (list)</div>
+        <div class="tree">- 類型：列表
+- 值：{0, 2*pi}
+- 應變關係：<span class="no-dependency">無依賴（常數列表）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">142. textθ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："θ →Width"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">143. textφ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："φ →Height"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">144. SphereExperimental (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── A_{χ} (numeric)
+│   └── [完整依賴樹同物件124]
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+├── φ（序列參數）
+├── θ（序列參數）
+├── A_{υ} (numeric)
+│   └── [完整依賴樹同物件125]
+├── A_{ζ} (numeric)
+│   └── [完整依賴樹同物件126]
+├── BaseAngleα (numeric)
+│   └── [完整依賴樹同物件137]
+├── AngleObtuse_{Acute} (numeric)
+│   └── [完整依賴樹同物件132]
+└── σ (numeric)
+    └── [完整依賴樹同物件123]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">145. SphereA (list)</div>
+        <div class="tree">條件判斷序列（If命令），依賴於：
+├── A_{χ} (numeric)
+│   └── [完整依賴樹同物件124]
+├── B_{χ} (numeric)
+│   └── [完整依賴樹同物件127]
+└── [與物件144相同的其他依賴]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">146. LensExtension_{X} (plane3d)</div>
+        <div class="tree">├── LensCenter (point3d)
+│   └── [完整依賴樹同物件39]
+└── xAxis（系統預設軸）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">147. AngleObtuse_X (angle3d)</div>
+        <div class="tree">├── LensExtension_{X} (plane3d)
+│   └── [完整依賴樹同物件146]
+└── LensExtension (plane3d)
+    └── [完整依賴樹同物件9]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">148. SphereB (list)</div>
+        <div class="tree">條件判斷序列（If命令），依賴於：
+├── A_{χ} (numeric)
+│   └── [完整依賴樹同物件124]
+├── B_{χ} (numeric)
+│   └── [完整依賴樹同物件127]
+├── B_{υ} (numeric)
+│   └── [完整依賴樹同物件128]
+├── B_{ζ} (numeric)
+│   └── [完整依賴樹同物件129]
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+├── BaseAngleβ (numeric)
+│   └── [完整依賴樹同物件139]
+├── AngleObtuse_{Acute} (numeric)
+│   └── [完整依賴樹同物件132]
+└── σ (numeric)
+    └── [完整依賴樹同物件123]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">149. ψ (numeric)</div>
+        <div class="tree">- 類型：數值（滑桿）
+- 值：2
+- 範圍：1-ϕ
+- 應變關係：<span class="no-dependency">無依賴（滑桿控制值）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">150. c (curvecartesian3d)</div>
+        <div class="tree">├── SphereA (list)
+│   └── [完整依賴樹同物件145]
+└── ψ (numeric)
+    └── 無依賴（滑桿值：2）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">151. Matrix_{Seq} (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── κ（序列參數）
+└── ϕ (numeric)
+    └── 無依賴（滑桿值：25）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">152. I2 (numeric)</div>
+        <div class="tree">- 類型：數值（輔助元素）
+- 值：NaN
+- 應變關係：<span class="no-dependency">無依賴（輔助元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">153. Matrix (list)</div>
+        <div class="tree">└── ϕ (numeric)
+    └── 無依賴（滑桿值：25）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">154. Matrix_{Elements} (list)</div>
+        <div class="tree">├── Matrix_{Seq} (list)
+│   └── [完整依賴樹同物件151]
+└── 索引：1</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">155. SphereLineA (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── SphereA (list)
+│   └── [完整依賴樹同物件145]
+├── κ（序列參數）
+└── ϕ (numeric)
+    └── 無依賴（滑桿值：25）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">156. SphereLineB (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── SphereB (list)
+│   └── [完整依賴樹同物件148]
+├── κ（序列參數）
+└── ϕ (numeric)
+    └── 無依賴（滑桿值：25）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">157. SpherePointsA (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── SphereA (list)
+│   └── [完整依賴樹同物件145]
+├── κ（序列參數）
+└── ϕ (numeric)
+    └── 無依賴（滑桿值：25）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">158. SpherePointsB (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── SphereB (list)
+│   └── [完整依賴樹同物件148]
+├── κ（序列參數）
+└── ϕ (numeric)
+    └── 無依賴（滑桿值：25）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">159. l1 (list)</div>
+        <div class="tree">序列生成元素（Sequence命令，縮放變換），依賴於：
+├── SphereA (list)
+│   └── [完整依賴樹同物件145]
+├── κ（序列參數）
+└── ϕ (numeric)
+    └── 無依賴（滑桿值：25）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">160. DPA (point3d)</div>
+        <div class="tree">└── a (quadric)
+    ├── A (point3d)
+    │   └── 無依賴（座標：2.244, 1.636, 0.08）
+    └── ρ (numeric)
+        └── 無依賴（值：1.0）</div>
+    </div>
+
+    <div class="section-header" id="objects-161-180">物件 161-180</div>
+
+    <div class="tree-container">
+        <div class="object-title">161. DLA (line3d)</div>
+        <div class="tree">├── DPA (point3d)
+│   └── [完整依賴樹同物件160]
+└── LensExtension (plane3d)
+    └── [完整依賴樹同物件9]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">162. ProjectionDPA (point3d)</div>
+        <div class="tree">├── DLA (line3d)
+│   └── [完整依賴樹同物件161]
+└── LensExtension (plane3d)
+    └── [完整依賴樹同物件9]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">163. DiscriminantVectorA (vector3d)</div>
+        <div class="tree">├── DPA (point3d)
+│   └── [完整依賴樹同物件160]
+└── ProjectionDPA (point3d)
+    └── [完整依賴樹同物件162]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">164. DPA_{χ} (numeric)</div>
+        <div class="tree">└── DPA (point3d)
+    └── [完整依賴樹同物件160]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">165. DPA_{υ} (numeric)</div>
+        <div class="tree">└── DPA (point3d)
+    └── [完整依賴樹同物件160]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">166. DPA_{ζ} (numeric)</div>
+        <div class="tree">└── DPA (point3d)
+    └── [完整依賴樹同物件160]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">167. DVA_{ζ} (numeric)</div>
+        <div class="tree">└── DiscriminantVectorA (vector3d)
+    └── [完整依賴樹同物件163]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">168. DOPA (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── DVA_{ζ} (numeric)
+│   └── [完整依賴樹同物件167]
+├── DPA_{χ} (numeric)
+│   └── [完整依賴樹同物件164]
+├── DPA_{υ} (numeric)
+│   └── [完整依賴樹同物件165]
+└── DPA_{ζ} (numeric)
+    └── [完整依賴樹同物件166]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">169. NormalLine_{A,B,1stInRe} (line3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── Tangent_{ArcBτ1,IncidentA} (line3d)
+│   └── [完整依賴樹同物件71]
+├── h (line3d)
+│   └── [完整依賴樹同物件72]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── Tangent_{ArcAρ1,IncidentB} (line3d)
+│   └── [完整依賴樹同物件65]
+└── i (line3d)
+    └── [完整依賴樹同物件66]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">170. Rotate_{A,B,1st,TIR} (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── Αuxiliary_{A,2nd} (point3d)
+│   └── [完整依賴樹同物件105]
+├── α_{2nd,Incident} (angle3d)
+│   └── [完整依賴樹同物件112]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── IntersectionZone_{A,B,2ndInRe} (plane3d)
+│   └── [完整依賴樹同物件106]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── Αuxiliary_{B,2nd} (point3d)
+│   └── [完整依賴樹同物件104]
+├── β_{2nd,Incident} (angle3d)
+│   └── [完整依賴樹同物件107]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">171. LightReflection_{A,B,1st,TIR} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Rotate_{A,B,1st,TIR} (point3d)
+│   └── [完整依賴樹同物件170]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Rotate_{A,B,1st,TIR} (point3d)
+│   └── [完整依賴樹同物件170]
+├── F_{1} (point3d)
+│   └── [完整依賴樹同物件86]
+└── F_{2} (point3d)
+    └── [完整依賴樹同物件87]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">172. IntersectionFindingZone_{A,B,1stInRe,TIR} (plane3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── LightReflection_{A,B,1st,TIR} (ray3d)
+│   └── [完整依賴樹同物件171]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── LightReflection_{A,B,1st,TIR} (ray3d)
+    └── [完整依賴樹同物件171]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">173. Circle_{A,B,1stInRe,TIR} (conic3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+├── IntersectionFindingZone_{A,B,1stInRe,TIR} (plane3d)
+│   └── [完整依賴樹同物件172]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+└── IntersectionFindingZone_{A,B,1stInRe,TIR} (plane3d)
+    └── [完整依賴樹同物件172]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">174. Vertex_{TIR→1} (point3d)</div>
+        <div class="tree">├── LensMidplane (conic3d)
+│   └── [完整依賴樹同物件7]
+└── Circle_{A,B,1stInRe,TIR} (conic3d)
+    └── [完整依賴樹同物件173]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">175. Vertex_{TIR→2} (point3d)</div>
+        <div class="tree">├── LensMidplane (conic3d)
+│   └── [完整依賴樹同物件7]
+└── Circle_{A,B,1stInRe,TIR} (conic3d)
+    └── [完整依賴樹同物件173]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">176. Arc_{A,B,1stInRe,TIR} (conicpart)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── Vertex_{TIR→1} (point3d)
+│   └── [完整依賴樹同物件174]
+├── Vertex_{TIR→2} (point3d)
+│   └── [完整依賴樹同物件175]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{TIR→1} (point3d)
+│   └── [完整依賴樹同物件174]
+└── Vertex_{TIR→2} (point3d)
+    └── [完整依賴樹同物件175]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">177. Circle_{A,B,1stInRe} (conic3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+├── ABC_{1} (plane3d)
+│   └── [完整依賴樹同物件13]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+└── ABC_{1} (plane3d)
+    └── [完整依賴樹同物件13]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">178. Arc_{A,B,1stInRe} (conicpart)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── Vertex_{1→1} (point3d)
+│   └── [完整依賴樹同物件18]
+├── Vertex_{1→2} (point3d)
+│   └── [完整依賴樹同物件17]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{1→1} (point3d)
+│   └── [完整依賴樹同物件18]
+└── Vertex_{1→2} (point3d)
+    └── [完整依賴樹同物件17]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">179. F_{Striped} (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── LightReflection_{A,B,1st,TIR} (ray3d)
+│   └── [完整依賴樹同物件171]
+├── Arc_{A,B,2ndInRe} (conicpart)
+│   └── [完整依賴樹同物件94]
+├── Arc_{A,B,1stInRe,TIR} (conicpart)
+│   └── [完整依賴樹同物件176]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">180. ζ (numeric)</div>
+        <div class="tree">條件判斷元素（If命令），計算TIR次數，依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPointA_{1st} (point3d)
+│   └── [完整依賴樹同物件33]
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+├── Vertex_{A,B,2ndInRe→2} (point3d)
+│   └── [完整依賴樹同物件92]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── α_{2nd,Incident} (angle3d)
+│   └── [完整依賴樹同物件112]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPointB_{1st} (point3d)
+│   └── [完整依賴樹同物件35]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── β_{2nd,Incident} (angle3d)
+    └── [完整依賴樹同物件107]</div>
+    </div>
+
+    <div class="section-header" id="objects-181-200">物件 181-200</div>
+
+    <div class="tree-container">
+        <div class="object-title">181. textκ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："κ→ TIR  times"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">182. textρ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："ρ→A  Radius"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">183. textλ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："λ→Focal  Lenght"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">184. textτ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："τ→ B  Radius"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">185. TIR_{2ndPoint} (point3d)</div>
+        <div class="tree">├── LightReflection_{A,B,1st,TIR} (ray3d)
+│   └── [完整依賴樹同物件171]
+└── Circle_{A,B,2ndInRe} (conic3d)
+    └── [完整依賴樹同物件90]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">186. γ_{1st,OpeningSize,TIR} (angle3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── TIR_{2ndPoint} (point3d)
+│   └── [完整依賴樹同物件185]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── TIR_{2ndPoint} (point3d)
+    └── [完整依賴樹同物件185]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">187. textLatin (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："α,β,γ,δ,ε,ζ,η,θ,ι,κ,λ,μ,ν,ξ,ο,π,ρ,σ,ς,τ,υ,ϕ,χ,ψ"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">188. TIRradius_{1} (segment3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── IncidentPoint_{A,B,2ndInRe} (point3d)
+    └── [完整依賴樹同物件95]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">189. TIRradius_{2} (segment3d)</div>
+        <div class="tree">├── TIRradius_{1} (segment3d)
+│   └── [完整依賴樹同物件188]
+├── γ_{1st,OpeningSize,TIR} (angle3d)
+│   └── [完整依賴樹同物件186]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── IntersectionZone_{A,B,2ndInRe} (plane3d)
+    └── [完整依賴樹同物件106]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">190. TIR_{IndicatorLine} (list)</div>
+        <div class="tree">條件判斷序列（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── γ_{1st,OpeningSize,TIR} (angle3d)
+│   └── [完整依賴樹同物件186]
+├── IntersectionZone_{A,B,2ndInRe} (plane3d)
+│   └── [完整依賴樹同物件106]
+├── n（序列參數）
+├── ζ (numeric)
+│   └── [完整依賴樹同物件180]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+└── B (point3d)
+    └── 無依賴（座標：3.180, 3.695, 0.076）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">191. TIR_{Points} (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── TIR_{IndicatorLine} (list)
+│   └── [完整依賴樹同物件190]
+├── Circle_{A,B,2ndInRe} (conic3d)
+│   └── [完整依賴樹同物件90]
+├── n（序列參數）
+└── ζ (numeric)
+    └── [完整依賴樹同物件180]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">192. textα (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："α→A  Side  1,2InRe"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">193. textβ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："β→B  Side  1,2InRe"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">194. textγ (text)</div>
+        <div class="tree">- 類型：文字
+- 內容："γ→ TIR"
+- 應變關係：<span class="no-dependency">無依賴（文字標籤）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">195. pic1 (image)</div>
+        <div class="tree">- 類型：圖片
+- 檔案：download.png
+- 應變關係：<span class="no-dependency">無依賴（圖片元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">196. TIR_{LastPoint} (point3d)</div>
+        <div class="tree">├── TIR_{Points} (list)
+│   └── [完整依賴樹同物件191]
+└── ζ (numeric)
+    └── [完整依賴樹同物件180]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">197. TIR_{VirtualPoint} (point3d)</div>
+        <div class="tree">├── TIR_{Points} (list)
+│   └── [完整依賴樹同物件191]
+└── ζ (numeric)
+    └── [完整依賴樹同物件180]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">198. e (boolean)</div>
+        <div class="tree">├── F_{Striped} (point3d)
+│   └── [完整依賴樹同物件179]
+└── TIR_{IndicatorLine} (list)
+    └── [完整依賴樹同物件190]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">199. Factor_{2} (numeric)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+├── Vertex_{A,B,2ndInRe→2} (point3d)
+│   └── [完整依賴樹同物件92]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+└── Vertex_{A,B,2ndInRe→2} (point3d)
+    └── [完整依賴樹同物件92]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">200. TIR_{Lights} (list)</div>
+        <div class="tree">序列生成元素（Sequence命令），依賴於：
+├── TIR_{Points} (list)
+│   └── [完整依賴樹同物件191]
+├── k（序列參數）
+└── ζ (numeric)
+    └── [完整依賴樹同物件180]</div>
+    </div>
+
+    <div class="section-header" id="objects-201-229">物件 201-229</div>
+
+    <div class="tree-container">
+        <div class="object-title">201. LightReflection_{A,B,Last,TIR} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── TIR_{LastPoint} (point3d)
+│   └── [完整依賴樹同物件196]
+├── TIR_{VirtualPoint} (point3d)
+│   └── [完整依賴樹同物件197]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── TIR_{LastPoint} (point3d)
+│   └── [完整依賴樹同物件196]
+├── TIR_{VirtualPoint} (point3d)
+│   └── [完整依賴樹同物件197]
+├── F_{1} (point3d)
+│   └── [完整依賴樹同物件86]
+└── F_{2} (point3d)
+    └── [完整依賴樹同物件87]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">202. IntersectionFindingZone_{A,B,3rdInRe} (plane3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── ζ (numeric)
+│   └── [完整依賴樹同物件180]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── LightReflection_{A,B,Last,TIR} (ray3d)
+│   └── [完整依賴樹同物件201]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── ζ (numeric)
+│   └── [完整依賴樹同物件180]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+└── LightReflection_{A,B,Last,TIR} (ray3d)
+    └── [完整依賴樹同物件201]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">203. Circle_{A,B,3rdInRe} (conic3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── τ (numeric)
+│   └── 無依賴（值：1.8）
+├── IntersectionFindingZone_{A,B,3rdInRe} (plane3d)
+│   └── [完整依賴樹同物件202]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── ρ (numeric)
+│   └── 無依賴（值：1.0）
+└── IntersectionFindingZone_{A,B,3rdInRe} (plane3d)
+    └── [完整依賴樹同物件202]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">204. Vertex_{A,B,3rdInRe→1} (point3d)</div>
+        <div class="tree">├── LensMidplane (conic3d)
+│   └── [完整依賴樹同物件7]
+└── Circle_{A,B,3rdInRe} (conic3d)
+    └── [完整依賴樹同物件203]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">205. Vertex_{A,B,3rdInRe→2} (point3d)</div>
+        <div class="tree">├── LensMidplane (conic3d)
+│   └── [完整依賴樹同物件7]
+└── Circle_{A,B,3rdInRe} (conic3d)
+    └── [完整依賴樹同物件203]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">206. Arc_{A,B,3rdInRe} (conicpart)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── Vertex_{A,B,3rdInRe→1} (point3d)
+│   └── [完整依賴樹同物件204]
+├── Vertex_{A,B,3rdInRe→2} (point3d)
+│   └── [完整依賴樹同物件205]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{A,B,3rdInRe→1} (point3d)
+│   └── [完整依賴樹同物件204]
+└── Vertex_{A,B,3rdInRe→2} (point3d)
+    └── [完整依賴樹同物件205]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">207. IncidentPoint_{A,B,3rdInRe} (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── LightReflection_{A,B,Last,TIR} (ray3d)
+│   └── [完整依賴樹同物件201]
+├── Arc_{A,B,3rdInRe} (conicpart)
+│   └── [完整依賴樹同物件206]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── LightReflection_{A,B,Last,TIR} (ray3d)
+│   └── [完整依賴樹同物件201]
+└── Arc_{A,B,3rdInRe} (conicpart)
+    └── [完整依賴樹同物件206]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">208. NormalLine_{A,B,3rdInRe} (line3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+└── A (point3d)
+    └── 無依賴（座標：2.244, 1.636, 0.08）</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">209. UnitVector_{NormalLineA,B,3rd} (vector3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── ζ (numeric)
+│   └── [完整依賴樹同物件180]
+├── NormalLine_{A,B,3rdInRe} (line3d)
+│   └── [完整依賴樹同物件208]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── ζ (numeric)
+│   └── [完整依賴樹同物件180]
+└── NormalLine_{A,B,3rdInRe} (line3d)
+    └── [完整依賴樹同物件208]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">210. IncidentSegment_{A,B,2nd} (segment3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+└── IncidentPoint_{A,B,2ndInRe} (point3d)
+    └── [完整依賴樹同物件95]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">211. IncidentSegment_{A,B,1st,TIR} (segment3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── F_{Striped} (point3d)
+│   └── [完整依賴樹同物件179]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+└── F_{Striped} (point3d)
+    └── [完整依賴樹同物件179]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">212. ζ_{Experimental} (numeric)</div>
+        <div class="tree">條件判斷元素（If命令），計算實驗性TIR次數，依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+├── Vertex_{A,B,2ndInRe→2} (point3d)
+│   └── [完整依賴樹同物件92]
+├── α_{2nd,Incident} (angle3d)
+│   └── [完整依賴樹同物件112]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+├── Vertex_{A,B,2ndInRe→1} (point3d)
+│   └── [完整依賴樹同物件91]
+├── Vertex_{A,B,2ndInRe→2} (point3d)
+│   └── [完整依賴樹同物件92]
+└── β_{2nd,Incident} (angle3d)
+    └── [完整依賴樹同物件107]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">213. ε (numeric)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── A (point3d)
+│   └── 無依賴（座標：2.244, 1.636, 0.08）
+├── F_{Striped} (point3d)
+│   └── [完整依賴樹同物件179]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── B (point3d)
+│   └── 無依賴（座標：3.180, 3.695, 0.076）
+└── F_{Striped} (point3d)
+    └── [完整依賴樹同物件179]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">214. pic2 (image)</div>
+        <div class="tree">- 類型：圖片
+- 檔案：download.png
+- 應變關係：<span class="no-dependency">無依賴（圖片元素）</span></div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">215. LightIncident_{A,B,1st} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── LightSource (point3d)
+│   └── 無依賴（座標：3.6, 2.2, 0.171）
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+├── F_{1} (point3d)
+│   └── [完整依賴樹同物件86]
+└── F_{2} (point3d)
+    └── [完整依賴樹同物件87]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">216. LightIncident_{A,B,2nd} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── IncidentPointA_{1st} (point3d)
+│   └── Arc_{Βτ1} (conicpart)
+│       └── [完整依賴樹同物件22]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── IncidentPointB_{1st} (point3d)
+│   └── Arc_{Aρ1} (conicpart)
+│       └── [完整依賴樹同物件21]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── F_{1} (point3d)
+│   └── [完整依賴樹同物件86]
+└── F_{2} (point3d)
+    └── [完整依賴樹同物件87]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">217. LightIncident_{A,B,3rd} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── TIR_{LastPoint} (point3d)
+│   └── [完整依賴樹同物件196]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+├── F_{1} (point3d)
+│   └── [完整依賴樹同物件86]
+└── F_{2} (point3d)
+    └── [完整依賴樹同物件87]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">218. LightRefraction_{A,B,2nd} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Rotate_{A,2nd,Refrection} (point3d)
+│   └── [完整依賴樹同物件116]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,2ndInRe} (point3d)
+│   └── [完整依賴樹同物件95]
+├── Rotate_{B,2nd,Refrection} (point3d)
+│   └── [完整依賴樹同物件110]
+├── F_{1} (point3d)
+│   └── [完整依賴樹同物件86]
+└── F_{2} (point3d)
+    └── [完整依賴樹同物件87]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">219. Αuxiliary_{A,B,3rd} (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件76]
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+├── UnitVector_{NormalLineA,B,3rd} (vector3d)
+│   └── [完整依賴樹同物件209]
+├── β_{1st,Incident} (angle3d)
+│   └── [完整依賴樹同物件70]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+└── UnitVector_{NormalLineA,B,3rd} (vector3d)
+    └── [完整依賴樹同物件209]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">220. Αuxiliary_{A,B,3rd,Symmetry} (point3d)</div>
+        <div class="tree">├── Αuxiliary_{A,B,3rd} (point3d)
+│   └── [完整依賴樹同物件219]
+└── IncidentPoint_{A,B,3rdInRe} (point3d)
+    └── [完整依賴樹同物件207]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">221. IntersectionZone_{A,B,3rdInRe} (plane3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── TIR_{LastPoint} (point3d)
+│   └── [完整依賴樹同物件196]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+└── Αuxiliary_{A,B,3rd} (point3d)
+    └── [完整依賴樹同物件219]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">222. γ_{3rd,Incident} (angle3d)</div>
+        <div class="tree">├── Αuxiliary_{A,B,3rd} (point3d)
+│   └── [完整依賴樹同物件219]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+├── TIR_{LastPoint} (point3d)
+│   └── [完整依賴樹同物件196]
+└── IntersectionZone_{A,B,3rdInRe} (plane3d)
+    └── [完整依賴樹同物件221]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">223. γ_{3}' (numeric)</div>
+        <div class="tree">├── n_{Lens} (numeric)
+│   └── 無依賴（值：1.3）
+├── n_{Outside} (numeric)
+│   └── 無依賴（值：1）
+└── γ_{3rd,Incident} (angle3d)
+    └── [完整依賴樹同物件222]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">224. Rotate_{A,B,3rd,Refraction} (point3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── Αuxiliary_{A,B,3rd,Symmetry} (point3d)
+│   └── [完整依賴樹同物件220]
+├── γ_{3} (numeric)
+│   └── [完整依賴樹同物件223]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+└── IntersectionZone_{A,B,3rdInRe} (plane3d)
+    └── [完整依賴樹同物件221]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">225. γ_{3rd,Refraction} (angle3d)</div>
+        <div class="tree">├── Αuxiliary_{A,B,3rd,Symmetry} (point3d)
+│   └── [完整依賴樹同物件220]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+├── Rotate_{A,B,3rd,Refraction} (point3d)
+│   └── [完整依賴樹同物件224]
+└── IntersectionZone_{A,B,3rdInRe} (plane3d)
+    └── [完整依賴樹同物件221]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">226. γ_{3} (numeric)</div>
+        <div class="tree">└── γ_{3rd,Refraction} (angle3d)
+    └── [完整依賴樹同物件225]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">227. LightRefraction_{A,B,3rd} (ray3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── IncidentPoint_{A,B,3rdInRe} (point3d)
+│   └── [完整依賴樹同物件207]
+└── Rotate_{A,B,3rd,Refraction} (point3d)
+    └── [完整依賴樹同物件224]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">228. IncidentSegment_{A,B,3rd} (segment3d)</div>
+        <div class="tree">條件判斷元素（If命令），依賴於：
+├── α_{2} (numeric)
+│   └── [完整依賴樹同物件114]
+├── β_{2} (numeric)
+│   └── [完整依賴樹同物件108]
+├── TIR_{LastPoint} (point3d)
+│   └── [完整依賴樹同物件196]
+└── IncidentPoint_{A,B,3rdInRe} (point3d)
+    └── [完整依賴樹同物件207]</div>
+    </div>
+
+    <div class="tree-container">
+        <div class="object-title">229. Conics_{1} (list)</div>
+        <div class="tree">註：在XML文件中，物件54已定義為 Conics_{1}，這裡是重複定義
+├── Arc_{Aρ1} (conicpart)
+│   └── [完整依賴樹同物件21]
+└── Arc_{Βτ1} (conicpart)
+    └── [完整依賴樹同物件22]</div>
+    </div>
+
+    <h2 id="conclusion">總結</h2>
+    
+    <div class="summary">
+        <p>這個GeoGebra 3D透鏡模組的229個物件形成了一個極其複雜的依賴網路：</p>
+        
+        <h3>1. 基礎層（無依賴）：共12個</h3>
+        <ul>
+            <li>幾何點：A、B、LightSource（3個）</li>
+            <li>物理參數：τ、ρ、n_Outside、n_Lens、n_Vacuum（5個）</li>
+            <li>控制參數：ϕ、ψ（2個）</li>
+            <li>常數列表：φ_{Height,Latitude}、θ_{Width,Longitude}（2個）</li>
+        </ul>
+        
+        <h3>2. 幾何構建層：約40個物件</h3>
+        <ul>
+            <li>球體和二次曲面：a、b</li>
+            <li>透鏡中間平面：LensMidplane</li>
+            <li>各種曲線、曲面和平面</li>
+            <li>頂點和交點計算</li>
+        </ul>
+        
+        <h3>3. 光學計算層：約80個物件</h3>
+        <ul>
+            <li>入射點：IncidentPointA_{1st}、IncidentPointB_{1st}、IncidentPoint_{A,B,2ndInRe}等</li>
+            <li>角度計算：α_{1st,Incident}、β_{1st,Incident}、α_{2nd,Incident}、β_{2nd,Incident}等</li>
+            <li>折射計算：α_{1}、β_{1}、α_{2}、β_{2}等</li>
+            <li>光線路徑：LightRefraction_{A,B,1st}、LightRefraction_{A,B,2nd}等</li>
+        </ul>
+        
+        <h3>4. 全內反射（TIR）層：約50個物件</h3>
+        <ul>
+            <li>TIR條件判斷和計算</li>
+            <li>TIR光線追蹤：LightReflection_{A,B,1st,TIR}、LightReflection_{A,B,Last,TIR}</li>
+            <li>TIR計數：ζ、ζ_{Experimental}</li>
+            <li>TIR指示線和點：TIR_{IndicatorLine}、TIR_{Points}、TIR_{Lights}</li>
+        </ul>
+        
+        <h3>5. 視覺化層：約40個物件</h3>
+        <ul>
+            <li>球體視覺化序列：SphereA、SphereB、SphereLineA、SphereLineB等</li>
+            <li>矩陣變換：Matrix、Matrix_{Seq}、Matrix_{Elements}</li>
+            <li>動態顯示元素</li>
+        </ul>
+        
+        <h3>6. 文字和輔助元素：約17個</h3>
+        <ul>
+            <li>文字標籤：textθ、textφ、textκ、textρ、textλ、textτ、textα、textβ、textγ、textLatin</li>
+            <li>圖片：pic1、pic2</li>
+            <li>輔助計算元素</li>
+        </ul>
+        
+        <p>每個物件都可以完整追溯到其最基礎的依賴元素，展現了參數化設計在光學系統模擬中的強大能力。通過改變基礎參數（如τ、ρ、n_Lens等），整個系統會自動更新，實現動態的光學模擬，包括折射、反射和全內反射等複雜光學現象。</p>
+        
+        <p>這個系統的設計充分展示了GeoGebra在科學視覺化和教育中的應用潛力，通過229個相互關聯的物件，創建了一個完整的3D光學透鏡模擬系統。</p>
+    </div>
+
+    <div class="note">
+        <strong>特殊說明：</strong>
+        <ol>
+            <li><strong>條件判斷元素</strong>：標註為"條件判斷元素"的物件使用If命令，其實際依賴會根據條件的真假而變化。</li>
+            <li><strong>序列生成元素</strong>：使用Sequence命令生成的物件，依賴包括序列參數和其他相關物件。</li>
+            <li><strong>CAS計算元素</strong>：物件49和52為CAS計算表達式，未在主列表中詳細展開。</li>
+            <li><strong>重複定義</strong>：物件54和229都定義為Conics_{1}，這可能是文件中的錯誤或更新痕跡。</li>
+            <li><strong>系統預設元素</strong>：xAxis、yAxis、zAxis等是GeoGebra系統預設的座標軸，不需要定義。</li>
+        </ol>
+    </div>
+</body>
+</html>
