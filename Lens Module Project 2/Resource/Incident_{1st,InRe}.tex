@@ -1,0 +1,12 @@
+Incident_{1st,InRe}=
+  if(
+
+    isdefined(Intersect(IncidentRay_{1},Arc_{1st,InRe},1)),
+
+    Intersect(IncidentRay_{1},Arc_{1st,InRe},1),
+
+    isdefined(Intersect(IncidentRay_{1},Arc_{1st,InRe},2)),
+
+    Intersect(IncidentRay_{1},Arc_{1st,InRe},2)
+    
+  )
