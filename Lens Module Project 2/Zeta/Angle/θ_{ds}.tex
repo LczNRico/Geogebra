@@ -2,6 +2,10 @@
 
     Angle(
         
-        Light1,LensMidPoint,A
-
+        Light1,
+        Intersect(
+            Segment(A,B),
+            Plane(IntersectConic(a,b))
+        ),
+        A
     )

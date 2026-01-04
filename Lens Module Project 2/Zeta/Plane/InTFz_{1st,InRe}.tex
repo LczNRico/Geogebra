@@ -2,12 +2,42 @@ InTFz_{1st,InRe}:
 
     If(
 
-        plzdtyA,
+        Angle(
         
-        Plane(B,IncidentRay_{1}),
+            Light1,
+
+            Intersect(
+
+                Segment(A,B),
+
+                Plane(IntersectConic(a,b))
+
+            ),
+
+            A
+        )
+
+        <((π)/(2)),
         
-        plzdtyB,
+        Plane(B,Ray(Light1,Light2)),
         
-        Plane(A,IncidentRay_{1})
+        Angle(
+        
+            Light1,
+
+            Intersect(
+
+                Segment(A,B),
+
+                Plane(IntersectConic(a,b))
+
+            ),
+
+            A
+        )
+
+        >((π)/(2)),
+        
+        Plane(A,Ray(Light1,Light2)})
         
     )

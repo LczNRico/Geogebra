@@ -1,2 +1,5 @@
 LensMidPoint=
-    Intersect(Segment(A,B),LensMidPlane)
+    Intersect(
+        Segment(A,B),
+        Plane(IntersectConic(a,b))
+    )
