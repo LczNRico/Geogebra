@@ -10,7 +10,7 @@ InTFz_{1st,InRe}:
 
                 Segment(A,B),
 
-                Plane(IntersectConic(a,b))
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
 
             ),
 
@@ -29,7 +29,7 @@ InTFz_{1st,InRe}:
 
                 Segment(A,B),
 
-                Plane(IntersectConic(a,b))
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
 
             ),
 
@@ -38,6 +38,6 @@ InTFz_{1st,InRe}:
 
         >((π)/(2)),
         
-        Plane(A,Ray(Light1,Light2)})
+        Plane(A,Ray(Light1,Light2))
         
     )
