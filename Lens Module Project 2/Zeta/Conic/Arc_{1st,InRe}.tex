@@ -1,32 +1,1725 @@
 Arc_{1st,InRe}:
-  If(
+If(
 
-    plzdtyA ∧ CircularArc(B,Vertex_{1st→1},Vertex_{1st→2},InTFz_{1st,InRe})<CircularArc(B,Vertex_{1st→2},Vertex_{1st→1},InTFz_{1st,InRe}),
-    
-    CircularArc(B,Vertex_{1st→1},Vertex_{1st→2},InTFz_{1st,InRe}),
+    Angle(       
+        Light1,
+        
+        Intersect(
+            Segment(A,B),
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+        ),
 
-    plzdtyA ∧ CircularArc(B,Vertex_{1st→2},Vertex_{1st→1},InTFz_{1st,InRe})<CircularArc(B,Vertex_{1st→1},Vertex_{1st→2},InTFz_{1st,InRe}),
+        A
+    )
+    <((π)/(2)) 
+    
+    ∧ 
+    
+    CircularArc(
+        B,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
 
-    CircularArc(B,Vertex_{1st→2},Vertex_{1st→1},InTFz_{1st,InRe}),
+                        Intersect(
+                            Segment(A,B),
 
-    plzdtyB ∧ CircularArc(A,Vertex_{1st→1},Vertex_{1st→2},InTFz_{1st,InRe})<CircularArc(A,Vertex_{1st→2},Vertex_{1st→1},InTFz_{1st,InRe}),
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
 
-    CircularArc(A,Vertex_{1st→1},Vertex_{1st→2},InTFz_{1st,InRe}),
-    
-    plzdtyB ∧ CircularArc(A,Vertex_{1st→2},Vertex_{1st→1},InTFz_{1st,InRe})<CircularArc(A,Vertex_{1st→1},Vertex_{1st→2},InTFz_{1st,InRe}),
-    
-    CircularArc(A,Vertex_{1st→2},Vertex_{1st→1},InTFz_{1st,InRe})
-    
-  )
+                        A
+                    )
 
-  Original Version:
-  If(
-    plzdtyA,
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        
+        Intersect(
+            IntersectPath(
+            
+                If(
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                <((π)/(2)),
+                
+                Plane(B,Ray(Light1,Light2)),
+                
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                >((π)/(2)),
+                
+                Plane(A,Ray(Light1,Light2))
+                
+                ),
+
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
     
-    CircularArc(B,Vertex_{1st→1},Vertex_{1st→2},InTFz_{1st,InRe}),
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    )
     
-    plzdtyB,
+    <
     
-    CircularArc(A,Vertex_{1st→2},Vertex_{1st→1},InTFz_{1st,InRe})
+    CircularArc(
+        B,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
     
-  )
+    ),
+    
+    CircularArc(
+        B,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        
+        Intersect(
+            IntersectPath(
+            
+                If(
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                <((π)/(2)),
+                
+                Plane(B,Ray(Light1,Light2)),
+                
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                >((π)/(2)),
+                
+                Plane(A,Ray(Light1,Light2))
+                
+                ),
+
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+    
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    
+    ),
+
+    Angle(       
+        Light1,
+        
+        Intersect(
+            Segment(A,B),
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+        ),
+
+        A
+    )
+    <((π)/(2)) 
+    
+    ∧
+    
+    CircularArc(
+        B,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        
+        Intersect(
+            IntersectPath(
+            
+                If(
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                <((π)/(2)),
+                
+                Plane(B,Ray(Light1,Light2)),
+                
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                >((π)/(2)),
+                
+                Plane(A,Ray(Light1,Light2))
+                
+                ),
+
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+    
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    
+    )
+    
+    <
+    
+    CircularArc(
+        B,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    
+    ),
+
+    CircularArc(
+        B,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        
+        Intersect(
+            IntersectPath(
+            
+                If(
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                <((π)/(2)),
+                
+                Plane(B,Ray(Light1,Light2)),
+                
+                Angle(            
+                    Light1,
+
+                    Intersect(
+                        Segment(A,B),
+
+                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                    ),
+
+                    A
+                )
+
+                >((π)/(2)),
+                
+                Plane(A,Ray(Light1,Light2))
+                
+                ),
+
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+    
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+        
+    ),
+
+    Angle(
+    
+        Light1,
+
+        Intersect(
+            Segment(A,B),
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+        ),
+
+        A
+    )
+    >((π)/(2)) 
+    
+    ∧
+    
+    CircularArc(
+        A,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    )
+    
+    <
+    
+    CircularArc(
+        A,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        if(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    ),
+
+    CircularArc(
+        A,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    ),
+    
+    Angle(
+        
+        Light1,
+
+        Intersect(
+            Segment(A,B),
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+        ),
+
+        A
+    )
+    >((π)/(2)) 
+    
+    ∧
+    
+    CircularArc(
+        A,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),        
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    )
+    
+    <
+    
+    CircularArc(
+        A,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
+        )
+    ),
+    
+    CircularArc(
+        A,      
+        Intersect(
+            IntersectPath(       
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β))
+                
+                )
+
+                ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            2
+        ),
+        Intersect(
+            IntersectPath(
+            
+                If(
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    <((π)/(2)),
+                    
+                    Plane(B,Ray(Light1,Light2)),
+                    
+                    Angle(            
+                        Light1,
+
+                        Intersect(
+                            Segment(A,B),
+
+                            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                        ),
+
+                        A
+                    )
+
+                    >((π)/(2)),
+                    
+                    Plane(A,Ray(Light1,Light2))
+                    
+                ),
+
+                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+            ),
+
+            IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+            1
+        ),
+        If(
+
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(
+            
+                Light1,
+
+                Intersect(
+
+                    Segment(A,B),
+
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+                ),
+
+                A
+            )
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2)))
+    )
+    
+)

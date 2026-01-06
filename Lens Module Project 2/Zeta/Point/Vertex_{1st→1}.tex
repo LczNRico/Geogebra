@@ -1,47 +1,47 @@
 Vertex_{1st→1}=
-    Intersect(
-        IntersectPath(
-        
-            If(
-                Angle(            
-                    Light1,
+Intersect(
+    IntersectPath(
+    
+        If(
+            Angle(            
+                Light1,
 
-                    Intersect(
-                        Segment(A,B),
+                Intersect(
+                    Segment(A,B),
 
-                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
-                    ),
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                ),
 
-                    A
-                )
+                A
+            )
 
-                <((π)/(2)),
-                
-                Plane(B,Ray(Light1,Light2)),
-                
-                Angle(            
-                    Light1,
+            <((π)/(2)),
+            
+            Plane(B,Ray(Light1,Light2)),
+            
+            Angle(            
+                Light1,
 
-                    Intersect(
-                        Segment(A,B),
+                Intersect(
+                    Segment(A,B),
 
-                        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
-                    ),
+                    Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+                ),
 
-                    A
-                )
+                A
+            )
 
-                >((π)/(2)),
-                
-                Plane(A,Ray(Light1,Light2))
-                
-            ),
-
-            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
-
+            >((π)/(2)),
+            
+            Plane(A,Ray(Light1,Light2))
+            
         ),
 
-        IntersectConic(Sphere(A,α),Sphere(B,β)),
+        Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
 
-        1
-    )
+    ),
+
+    IntersectConic(Sphere(A,α),Sphere(B,β)),
+
+    1
+)

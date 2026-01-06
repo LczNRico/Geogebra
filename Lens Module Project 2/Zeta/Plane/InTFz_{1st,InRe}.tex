@@ -1,43 +1,43 @@
 InTFz_{1st,InRe}: 
 
-    If(
+If(
 
-        Angle(
-        
-            Light1,
+    Angle(
+    
+        Light1,
 
-            Intersect(
+        Intersect(
 
-                Segment(A,B),
+            Segment(A,B),
 
-                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
 
-            ),
+        ),
 
-            A
-        )
-
-        <((π)/(2)),
-        
-        Plane(B,Ray(Light1,Light2)),
-        
-        Angle(
-        
-            Light1,
-
-            Intersect(
-
-                Segment(A,B),
-
-                Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
-
-            ),
-
-            A
-        )
-
-        >((π)/(2)),
-        
-        Plane(A,Ray(Light1,Light2))
-        
+        A
     )
+
+    <((π)/(2)),
+    
+    Plane(B,Ray(Light1,Light2)),
+    
+    Angle(
+    
+        Light1,
+
+        Intersect(
+
+            Segment(A,B),
+
+            Plane(IntersectConic(Sphere(A,α),Sphere(B,β)))
+
+        ),
+
+        A
+    )
+
+    >((π)/(2)),
+    
+    Plane(A,Ray(Light1,Light2))
+    
+)
